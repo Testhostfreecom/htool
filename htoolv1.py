@@ -126,76 +126,133 @@ tz = pytz.timezone("Asia/Ho_Chi_Minh")
 # ================== GIAO DIỆN HTOOL ==================
 
 HTOOL_COLORS = {
-    "gold": "#FFD700",
-    "gold_dark": "#B8860B",
-    "platinum": "#E5E4E2",
-    "diamond": "#B9F2FF",
-    "ruby": "#E0115F",
-    "emerald": "#50C878",
-    "sapphire": "#0F52BA",
-    "amethyst": "#9966CC",
-    "onyx": "#353839",
-    "rose": "#FF007F",
-    "neon_blue": "#00D4FF",
-    "neon_pink": "#FF00E5",
-    "neon_green": "#39FF14",
-    "neon_orange": "#FF5E00",
-    "crimson": "#DC143C",
-    "turquoise": "#40E0D0",
-    "lavender": "#E6E6FA",
+    # NOVA DARK // cinematic terminal — deep space + electric accents
+    "gold": "#FFD166",       # amber highlight
+    "gold_dark": "#C9920A",  # warm amber dim
+    "platinum": "#E2E8F0",   # near-white text on dark
+    "diamond": "#38BDF8",    # electric sky
+    "ruby": "#FF4D6D",       # hot coral-red
+    "emerald": "#06D6A0",    # neon mint-green
+    "sapphire": "#818CF8",   # periwinkle-indigo
+    "amethyst": "#A78BFA",   # soft violet
+    "onyx": "#1E293B",       # deep panel bg
+    "rose": "#FB7185",       # soft pink
+    "neon_blue": "#22D3EE",  # cyan electric
+    "neon_pink": "#F472B6",  # vivid rose
+    "neon_green": "#4ADE80", # lime signal
+    "neon_orange": "#FB923C",# warm signal
+    "crimson": "#EF4444",    # error red
+    "turquoise": "#2DD4BF",  # teal accent
+    "lavender": "#C4B5FD",   # muted violet
+    "sky": "#7DD3FC",        # soft sky blue
+    "mint": "#6EE7B7",       # pastel mint
+    "text": "#F1F5F9",       # primary text (light on dark)
+    "muted": "#94A3B8",      # secondary text
+    "surface": "#0F172A",    # deep background
+    "white": "#F8FAFC",      # near-white
+    "bg_panel": "#1E293B",   # panel dark
+    "bg_deep": "#0F172A",    # deepest bg
+    "accent_line": "#334155",# subtle dividers
 }
 
 ICONS = {
-    "crown": "👑",
-    "diamond": "💎",
-    "star": "⭐",
-    "fire": "🔥",
-    "lightning": "⚡",
-    "target": "🎯",
-    "shield": "🛡️",
-    "sword": "⚔️",
-    "brain": "🧠",
-    "robot": "🤖",
-    "rocket": "🚀",
-    "trophy": "🏆",
-    "medal": "🏅",
-    "gem": "💠",
-    "sparkle": "✨",
-    "settings": "⚙️",
-    "user": "👤",
-    "key": "🔑",
-    "lock": "🔒",
-    "unlock": "🔓",
-    "check": "✅",
-    "cross": "❌",
-    "warning": "⚠️",
-    "info": "ℹ️",
-    "money": "💰",
-    "chart": "📊",
-    "clock": "⏰",
-    "link": "🔗",
-    "wifi": "📶",
-    "globe": "🌐",
-    "plus": "➕",
-    "minus": "➖",
-    "arrow": "➡️",
-    "heart": "❤️",
-    "bell": "🔔",
-    "gift": "🎁",
-    "magic": "🔮",
-    "phone": "📞",
+    "crown":"♛", "diamond":"◈", "star":"★", "fire":"⬡", "lightning":"⚡",
+    "target":"⊕", "shield":"⬡", "sword":"⟫", "brain":"◉", "robot":"▶",
+    "rocket":"▲", "trophy":"◆", "medal":"◎", "gem":"◈", "sparkle":"✦",
+    "settings":"◈", "user":"◉", "key":"⌘", "lock":"■", "unlock":"□",
+    "check":"✓", "cross":"✕", "warning":"▲", "info":"◆", "money":"◈",
+    "chart":"▦", "clock":"◷", "link":"→", "wifi":"≋", "globe":"⊕",
+    "plus":"＋", "minus":"−", "arrow":"▶", "heart":"♥", "bell":"◆",
+    "gift":"◈", "magic":"✦", "phone":"◉", "pulse":"◉", "scan":"⊡",
+    "ai":"▣", "race":"▶▶", "escape":"⊠", "lotto":"★",
 }
 
-LOGO = """
-╔════════════════════════════════════════════════════════════════════════════╗
-║  ██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ██╗                           ║
-║  ██║  ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██║                           ║
-║  ███████║   ██║   ██║   ██║██║   ██║██║     ██║                           ║
-║  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ██║                           ║
-║  ██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████╗                     ║
-║  ╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝                     ║
-╚════════════════════════════════════════════════════════════════════════════╝
+# NOVA DARK LOGO — cinematic wordmark, space-terminal aesthetic
+LOGO = r"""
+  ██╗  ██╗    ████████╗ ██████╗  ██████╗ ██╗
+  ██║  ██║       ██║   ██╔═══██╗██╔═══██╗██║
+  ███████║       ██║   ██║   ██║██║   ██║██║
+  ██╔══██║       ██║   ██║   ██║██║   ██║██║
+  ██║  ██║       ██║   ╚██████╔╝╚██████╔╝███████╗
+  ╚═╝  ╚═╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝
 """
+
+LOGO_TAGLINE = "N O V A   ·   A I   C O M M A N D   S Y S T E M   ·   V 3"
+
+
+def _ui_title(icon, title, subtitle=""):
+    """NOVA DARK: cinematic section header — icon + gradient wordmark."""
+    console.print()
+    # brand strip
+    brand = Text()
+    brand.append("  ♛ ", style=f"bold {HTOOL_COLORS['gold']}")
+    brand.append("HTOOL", style=f"bold {HTOOL_COLORS['platinum']}")
+    brand.append("  ·  ", style=HTOOL_COLORS["accent_line"])
+    brand.append("NOVA", style=f"bold {HTOOL_COLORS['sapphire']}")
+    brand.append("  ♛ ", style=f"bold {HTOOL_COLORS['gold']}")
+    console.print(Align.center(brand))
+    console.print(Align.center(Text(
+        "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰",
+        style=HTOOL_COLORS["sapphire"]
+    )))
+    title_text = Text()
+    title_text.append(f" {icon}  ", style=f"bold {HTOOL_COLORS['neon_orange']}")
+    title_text.append(title.upper(), style=f"bold {HTOOL_COLORS['gold']}")
+    console.print(Align.center(title_text))
+    if subtitle:
+        console.print(Align.center(Text(f"  {subtitle}  ", style=HTOOL_COLORS["muted"])))
+    console.print()
+
+
+def _ui_section(title, body, accent=None):
+    """NOVA DARK: sleek card with left accent bar."""
+    accent = accent or HTOOL_COLORS["sapphire"]
+    head = Text()
+    head.append("▌ ", style=f"bold {accent}")
+    head.append(title.upper(), style=f"bold {HTOOL_COLORS['gold']}")
+    console.print(head)
+    console.print(Panel(body, border_style=accent, box=box.HEAVY_HEAD, padding=(0, 2)))
+
+
+def _ui_prompt(label="COMMAND"):
+    return Prompt.ask(
+        f"\n[bold {HTOOL_COLORS['gold']}] ♛  {label.upper()}[/bold {HTOOL_COLORS['gold']}]"
+        f"[{HTOOL_COLORS['accent_line']}] ─────────────────── [/{HTOOL_COLORS['accent_line']}]"
+        f"[bold {HTOOL_COLORS['emerald']}]▶[/bold {HTOOL_COLORS['emerald']}]",
+        default="q"
+    ).strip()
+
+
+def _ui_chip(number, title, detail, accent):
+    t = Text()
+    t.append(f"  {number}  ", style=f"bold {HTOOL_COLORS['bg_deep']} on {accent}")
+    t.append(f"  {title.upper()}  ", style=f"bold {HTOOL_COLORS['gold']}")
+    t.append(detail, style=HTOOL_COLORS["muted"])
+    return t
+
+
+def _ui_status_bar(pairs: list):
+    """Render a compact dark status strip from [(label, value, color)] list."""
+    t = Text()
+    for i, (label, value, color) in enumerate(pairs):
+        if i > 0:
+            t.append("  │  ", style=HTOOL_COLORS["accent_line"])
+        t.append(f"{label} ", style=HTOOL_COLORS["muted"])
+        t.append(value, style=f"bold {color}")
+    return Panel(
+        Align.center(t),
+        border_style=HTOOL_COLORS["accent_line"],
+        box=box.SIMPLE,
+        padding=(0, 1),
+    )
+
+
+def _ui_divider(label=""):
+    """Sleek horizontal divider with optional centered label."""
+    if label:
+        console.print(Rule(f"[bold {HTOOL_COLORS['muted']}] {label} [/]", style=HTOOL_COLORS["accent_line"]))
+    else:
+        console.print(Rule(style=HTOOL_COLORS["accent_line"]))
 
 # ================== BIẾN TOÀN CỤC ==================
 _ws_status = "⏳ Đang kết nối..."
@@ -351,7 +408,8 @@ class SecureHTOOL:
         if self.is_stealth:
             return self.anti_detection.make_stealth_request(url, **kwargs)
         else:
-            return requests.request('GET', url, **kwargs)
+            method = kwargs.pop('method', 'GET')
+            return requests.request(method, url, **kwargs)
     
     def secure_post(self, url: str, **kwargs) -> Optional[requests.Response]:
         if self.is_stealth:
@@ -398,25 +456,40 @@ def get_local_ip() -> Optional[str]:
         return None
 
 def get_device_fingerprint() -> str:
+    """
+    Mã thiết bị CỐ ĐỊNH — chỉ từ phần cứng/OS.
+    Không ghi file .txt / .json (dễ sửa → đổi mã).
+    Không dùng time/random — cùng máy luôn ra cùng mã.
+    Ghim thật sự: lưu fingerprint lên Supabase lúc tạo user.
+    """
+    parts = []
+    # MAC (uuid.getnode) — ổn định trên cùng máy
     try:
-        info = []
-        try:
-            mac = ':'.join(['{:02x}'.format((uuid.getnode() >> elements) & 0xff) 
-                           for elements in range(0, 2*6, 2)][::-1])
-            info.append(mac)
-        except:
-            pass
-        try:
-            info.append(socket.gethostname())
-        except:
-            pass
-        info.append(platform.platform())
-        info.append(platform.processor())
-        info.append(platform.machine())
-        fingerprint_str = ''.join(info)
-        return hashlib.sha256(fingerprint_str.encode()).hexdigest()[:16]
-    except:
-        return hashlib.md5(str(time.time()).encode()).hexdigest()[:16]
+        node = uuid.getnode()
+        mac = ":".join(f"{(node >> ele) & 0xFF:02x}" for ele in range(40, -1, -8))
+        parts.append(f"mac:{mac}")
+    except Exception:
+        pass
+    try:
+        parts.append(f"host:{socket.gethostname()}")
+    except Exception:
+        pass
+    try:
+        parts.append(f"sys:{platform.system()}")
+        parts.append(f"rel:{platform.release()}")
+        parts.append(f"mach:{platform.machine()}")
+        parts.append(f"proc:{platform.processor() or 'x'}")
+    except Exception:
+        pass
+    try:
+        # home path — ổn định theo user OS, không phải JSON app
+        parts.append(f"home:{Path.home()}")
+    except Exception:
+        pass
+
+    raw = "|".join(parts) if parts else "htool-fixed-device"
+    # SHA256 đầy đủ rồi lấy 24 ký tự — cố định
+    return hashlib.sha256(raw.encode("utf-8", errors="ignore")).hexdigest()[:24]
 
 def scan_ip_ban_list() -> bool:
     try:
@@ -775,6 +848,405 @@ def create_key_on_supabase(
         return False, f"Lỗi kết nối Supabase: {str(e)}"
 
 
+# ================== SUPABASE USERS (NGUỒN CHÍNH — KHÔNG LƯU LOCAL) ==================
+# Toàn bộ user/xu/IP lưu trên Supabase. Không dùng user_data.enc.
+# SQL tạo bảng (SQL Editor):
+#   create table if not exists public.users (
+#     user_id text primary key,
+#     ip text,
+#     coins double precision default 0,
+#     total_mined double precision default 0,
+#     keys_count int default 0,
+#     keys jsonb default '[]'::jsonb,
+#     daily_claim_date text default '',
+#     coin_day text default '',
+#     mining boolean default false,
+#     mining_start double precision default 0,
+#     note text default '',
+#     fingerprint text default '',
+#     status text default 'active',
+#     created_at timestamptz default now(),
+#     updated_at timestamptz default now(),
+#     last_seen_at timestamptz default now()
+#   );
+#   create index if not exists users_ip_idx on public.users (ip);
+#
+# Nếu bảng cũ đã tạo, chạy thêm:
+#   alter table public.users add column if not exists keys jsonb default '[]'::jsonb;
+#   alter table public.users add column if not exists daily_claim_date text default '';
+#   alter table public.users add column if not exists coin_day text default '';
+#   alter table public.users add column if not exists mining boolean default false;
+#   alter table public.users add column if not exists mining_start double precision default 0;
+#   alter table public.users add column if not exists ban_until timestamptz;
+#   alter table public.users add column if not exists ban_reason text default '';
+#   create index if not exists users_fingerprint_idx on public.users (fingerprint);
+#   alter table public.users add column if not exists banned_until timestamptz;
+#   alter table public.users add column if not exists ban_reason text default '';
+#   create index if not exists users_fingerprint_idx on public.users (fingerprint);
+
+# Cache RAM (không ghi file local)
+_USER_CACHE: Dict[str, dict] = {}
+_USER_CACHE_TS: float = 0.0
+_USER_CACHE_TTL = 15.0  # giây
+DEVICE_BAN_DAYS = 2
+DEVICE_BAN_HOURS = 48  # 2 ngày — đổi IP trên cùng mã thiết bị
+
+
+def supabase_get_user(user_id: str) -> Optional[dict]:
+    """Lấy 1 user từ Supabase theo user_id."""
+    try:
+        url = f"{SUPABASE_URL}/rest/v1/users?user_id=eq.{user_id}&select=*&limit=1"
+        r = requests.get(url, headers=supabase_headers(), timeout=12)
+        if r.status_code == 200:
+            rows = r.json() if isinstance(r.json(), list) else []
+            return rows[0] if rows else None
+        return None
+    except Exception:
+        return None
+
+
+def supabase_find_user_by_ip(ip: str) -> Optional[dict]:
+    """Tìm user trên Supabase theo IP (mỗi IP ideally 1 user)."""
+    if not ip or ip == "unknown":
+        return None
+    try:
+        url = f"{SUPABASE_URL}/rest/v1/users?ip=eq.{ip}&select=*&limit=1"
+        r = requests.get(url, headers=supabase_headers(), timeout=12)
+        if r.status_code == 200:
+            rows = r.json() if isinstance(r.json(), list) else []
+            return rows[0] if rows else None
+        return None
+    except Exception:
+        return None
+
+
+def supabase_find_user_by_fingerprint(fp: str) -> Optional[dict]:
+    """Tìm user theo mã thiết bị (fingerprint)."""
+    if not fp:
+        return None
+    try:
+        # encode an toàn cho query
+        from urllib.parse import quote
+        q = quote(str(fp), safe="")
+        url = f"{SUPABASE_URL}/rest/v1/users?fingerprint=eq.{q}&select=*&limit=1"
+        r = requests.get(url, headers=supabase_headers(), timeout=12)
+        if r.status_code == 200:
+            rows = r.json() if isinstance(r.json(), list) else []
+            return rows[0] if rows else None
+        return None
+    except Exception:
+        return None
+
+
+def supabase_ban_user(user_id: str, hours: int = DEVICE_BAN_HOURS, reason: str = "") -> tuple:
+    """Ban user trên Supabase trong `hours` giờ."""
+    uid = str(user_id).strip()
+    if not uid:
+        return False, "user_id trống"
+    until = datetime.now(timezone.utc) + timedelta(hours=hours)
+    payload = {
+        "status": "banned",
+        "ban_until": until.isoformat(),
+        "ban_reason": reason or "Đổi IP / gian lận thiết bị",
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+    }
+    try:
+        url = f"{SUPABASE_URL}/rest/v1/users?user_id=eq.{uid}"
+        r = requests.patch(
+            url,
+            headers=supabase_headers(prefer="return=representation"),
+            json=payload,
+            timeout=15,
+        )
+        if r.status_code in (200, 204):
+            return True, until.isoformat()
+        return False, f"Ban fail {r.status_code}: {r.text[:200]}"
+    except Exception as e:
+        return False, str(e)
+
+
+def supabase_clear_ban_if_expired(user_id: str, row: Optional[dict] = None) -> bool:
+    """Hết hạn ban → status active. True nếu đã clear hoặc không còn ban."""
+    uid = str(user_id)
+    row = row or supabase_get_user(uid)
+    if not row:
+        return True
+    if str(row.get("status") or "") != "banned":
+        return True
+    ban_until = row.get("ban_until") or ""
+    if not ban_until:
+        return False
+    try:
+        dt = parse_datetime_safe(str(ban_until))
+        if dt is None:
+            return False
+        if datetime.now(timezone.utc) >= dt:
+            url = f"{SUPABASE_URL}/rest/v1/users?user_id=eq.{uid}"
+            requests.patch(
+                url,
+                headers=supabase_headers(prefer="return=minimal"),
+                json={
+                    "status": "active",
+                    "ban_until": None,
+                    "ban_reason": "",
+                    "updated_at": datetime.now(timezone.utc).isoformat(),
+                },
+                timeout=12,
+            )
+            return True
+        return False
+    except Exception:
+        return False
+
+
+def show_ban_screen(user_id: str = "", reason: str = "", ban_until: str = "") -> None:  # noqa: E501
+    """Màn hình ban — hiện mỗi lần mở tool."""
+    console.print()
+    ban_info = Text()
+    ban_info.append("✕  SECURITY LOCK\n\n", style=f"bold {HTOOL_COLORS['ruby']}")
+    ban_info.append("◈ USER       ", style=HTOOL_COLORS["muted"])
+    ban_info.append(f"{user_id or '?'}\n", style=f"bold {HTOOL_COLORS['platinum']}")
+    ban_info.append("◈ LÝ DO      ", style=HTOOL_COLORS["muted"])
+    ban_info.append(f"{reason or 'Đổi IP trên cùng thiết bị'}\n", style=f"bold {HTOOL_COLORS['neon_orange']}")
+    ban_info.append("◈ HẾT HẠN   ", style=HTOOL_COLORS["muted"])
+    ban_info.append(f"{str(ban_until)[:19] or 'sau 2 ngày'}\n\n", style=f"bold {HTOOL_COLORS['gold']}")
+    ban_info.append("Tool bị khóa. Liên hệ admin để gỡ ban.\n", style=HTOOL_COLORS["platinum"])
+    ban_info.append("Chạy lại tool vẫn sẽ hiện thông báo này đến hết hạn.", style=HTOOL_COLORS["muted"])
+    console.print(Panel(
+        Align.center(ban_info),
+        border_style=HTOOL_COLORS["ruby"],
+        box=box.HEAVY_HEAD,
+        title=f"[bold {HTOOL_COLORS['ruby']}]  ✕  ACCESS DENIED  [/]",
+        padding=(1, 2),
+    ))
+
+
+def supabase_unban_user(user_id: str) -> tuple:
+    """Admin gỡ ban user trên Supabase."""
+    uid = str(user_id).strip()
+    if not uid:
+        return False, "user_id trống"
+    try:
+        url = f"{SUPABASE_URL}/rest/v1/users?user_id=eq.{uid}"
+        r = requests.patch(
+            url,
+            headers=supabase_headers(prefer="return=representation"),
+            json={
+                "status": "active",
+                "ban_until": None,
+                "ban_reason": "",
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+            },
+            timeout=15,
+        )
+        if r.status_code in (200, 204):
+            return True, f"Đã gỡ ban user {uid}"
+        return False, f"Unban fail {r.status_code}: {r.text[:200]}"
+    except Exception as e:
+        return False, str(e)
+
+
+def check_device_ip_integrity() -> tuple:
+    """
+    ĐÃ TẮT kiểm tra 'cùng máy' (fingerprint).
+    Chỉ còn rule: mỗi IP 1 user trên Supabase (xem create_user / check_ip).
+    Vẫn chặn nếu user đang bị ban (status=banned) theo user_id gắn IP hiện tại.
+    """
+    ip = _current_client_ip()
+    try:
+        has_user, uid, row, _msg = check_ip_user_on_supabase(ip)
+    except Exception:
+        return True, "skip", None
+    if not has_user or not uid or not row:
+        return True, "OK", None
+    if str(row.get("status") or "") == "banned":
+        if not supabase_clear_ban_if_expired(uid, row):
+            show_ban_screen(uid, str(row.get("ban_reason") or ""), str(row.get("ban_until") or ""))
+            return False, "BỊ BAN RỒI GIAN LẬN KHÔNG ĐƯỢC NỮA ĐÂU", uid
+    return True, "OK", uid
+
+
+def _row_to_user_data(row: dict) -> dict:
+    """Map 1 row Supabase → dict user nội bộ."""
+    if not row:
+        return {}
+    keys = row.get("keys") or []
+    if isinstance(keys, str):
+        try:
+            keys = json.loads(keys)
+        except Exception:
+            keys = []
+    if not isinstance(keys, list):
+        keys = []
+    return {
+        "coins": float(row.get("coins", 0) or 0),
+        "mining": bool(row.get("mining", False)),
+        "mining_start": float(row.get("mining_start", 0) or 0),
+        "keys": keys,
+        "total_mined": float(row.get("total_mined", 0) or 0),
+        "daily_claim_date": str(row.get("daily_claim_date") or ""),
+        "coin_day": str(row.get("coin_day") or ""),
+        "created_at": str(row.get("created_at") or ""),
+        "ip": str(row.get("ip") or "unknown"),
+        "note": str(row.get("note") or ""),
+        "fingerprint": str(row.get("fingerprint") or ""),
+        "status": str(row.get("status") or "active"),
+        "ban_until": str(row.get("ban_until") or ""),
+        "ban_reason": str(row.get("ban_reason") or ""),
+        "checksum": "",
+    }
+
+
+def supabase_upsert_user(
+    user_id: str,
+    ip: str = "",
+    coins: float = 0,
+    total_mined: float = 0,
+    keys_count: int = 0,
+    note: str = "",
+    fingerprint: str = "",
+    status: str = "active",
+    keys: Optional[list] = None,
+    daily_claim_date: str = "",
+    coin_day: str = "",
+    mining: bool = False,
+    mining_start: float = 0,
+) -> tuple:
+    """
+    Lưu / cập nhật user lên Supabase (bảng users) — nguồn chính, không local.
+    Trả về (ok: bool, message_or_row).
+    """
+    uid = str(user_id).strip()
+    if not uid:
+        return False, "user_id trống"
+
+    now_iso = datetime.now(timezone.utc).isoformat()
+    keys_list = keys if isinstance(keys, list) else []
+    payload = {
+        "user_id": uid,
+        "ip": ip or "unknown",
+        "coins": float(coins or 0),
+        "total_mined": float(total_mined or 0),
+        "keys_count": int(keys_count if keys_count is not None else len(keys_list)),
+        "keys": keys_list,
+        "daily_claim_date": daily_claim_date or "",
+        "coin_day": coin_day or "",
+        "mining": bool(mining),
+        "mining_start": float(mining_start or 0),
+        "note": note or "",
+        "fingerprint": fingerprint or "",
+        "status": status or "active",
+        "updated_at": now_iso,
+        "last_seen_at": now_iso,
+    }
+
+    url = f"{SUPABASE_URL}/rest/v1/users"
+    headers = supabase_headers(prefer="resolution=merge-duplicates,return=representation")
+    headers["Prefer"] = "resolution=merge-duplicates,return=representation"
+    # PostgREST upsert
+    try:
+        # Thử PATCH nếu đã tồn tại
+        existing = supabase_get_user(uid)
+        if existing:
+            patch_url = f"{SUPABASE_URL}/rest/v1/users?user_id=eq.{uid}"
+            # không ghi đè created_at
+            patch_body = {k: v for k, v in payload.items() if k != "user_id"}
+            r = requests.patch(
+                patch_url,
+                headers=supabase_headers(prefer="return=representation"),
+                json=patch_body,
+                timeout=15,
+            )
+            if r.status_code in (200, 204):
+                row = r.json()[0] if r.text and r.status_code == 200 and isinstance(r.json(), list) and r.json() else payload
+                return True, row
+            # fallback POST
+        else:
+            payload["created_at"] = now_iso
+
+        r = requests.post(
+            url,
+            headers=headers,
+            json=payload,
+            timeout=15,
+        )
+        if r.status_code in (200, 201):
+            data = r.json()
+            row = data[0] if isinstance(data, list) and data else data
+            return True, row
+        if r.status_code == 409:
+            # conflict → patch
+            patch_url = f"{SUPABASE_URL}/rest/v1/users?user_id=eq.{uid}"
+            r2 = requests.patch(
+                patch_url,
+                headers=supabase_headers(prefer="return=representation"),
+                json={k: v for k, v in payload.items() if k != "user_id"},
+                timeout=15,
+            )
+            if r2.status_code in (200, 204):
+                return True, payload
+            return False, f"Conflict + patch fail: {r2.status_code} {r2.text[:200]}"
+
+        return False, f"Supabase users lỗi {r.status_code}: {r.text[:300]}"
+    except Exception as e:
+        return False, f"Lỗi kết nối Supabase users: {e}"
+
+
+def supabase_list_users(limit: int = 50) -> list:
+    """Danh sách user trên Supabase."""
+    try:
+        url = f"{SUPABASE_URL}/rest/v1/users?select=*&order=updated_at.desc&limit={limit}"
+        r = requests.get(url, headers=supabase_headers(), timeout=15)
+        if r.status_code == 200:
+            return r.json() if isinstance(r.json(), list) else []
+        url2 = f"{SUPABASE_URL}/rest/v1/users?select=*&limit={limit}"
+        r2 = requests.get(url2, headers=supabase_headers(), timeout=15)
+        if r2.status_code == 200:
+            return r2.json() if isinstance(r2.json(), list) else []
+        return []
+    except Exception as e:
+        safe_console_print(f"[red]Lỗi list users: {e}[/red]")
+        return []
+
+
+def sync_user_to_supabase(user_id: str, user_data: Optional[dict] = None) -> tuple:
+    """Ghi user lên Supabase (nguồn chính)."""
+    uid = str(user_id)
+    if user_data is None:
+        data = load_user_data_secure()
+        user_data = data.get(uid) or {}
+    ip = str(user_data.get("ip") or get_public_ip() or _ip_info.get("public_ip") or "unknown")
+    keys = user_data.get("keys") or []
+    if not isinstance(keys, list):
+        keys = []
+    fp = str(user_data.get("fingerprint") or "")
+    if not fp:
+        try:
+            fp = get_device_fingerprint()
+        except Exception:
+            pass
+    ok, result = supabase_upsert_user(
+        user_id=uid,
+        ip=ip,
+        coins=float(user_data.get("coins", 0) or 0),
+        total_mined=float(user_data.get("total_mined", 0) or 0),
+        keys_count=len(keys),
+        keys=keys,
+        daily_claim_date=str(user_data.get("daily_claim_date") or ""),
+        coin_day=str(user_data.get("coin_day") or ""),
+        mining=bool(user_data.get("mining", False)),
+        mining_start=float(user_data.get("mining_start", 0) or 0),
+        note=str(user_data.get("note") or ""),
+        fingerprint=fp,
+        status=str(user_data.get("status") or "active"),
+    )
+    if ok:
+        global _USER_CACHE, _USER_CACHE_TS
+        _USER_CACHE[uid] = dict(user_data)
+        _USER_CACHE_TS = time.time()
+    return ok, result
+
+
 def parse_datetime_safe(date_str):
     if not date_str or date_str == 'forever':
         return None
@@ -822,54 +1294,51 @@ def stop_heartbeat():
 # ================== MÀN HÌNH XÁC THỰC ==================
 
 def show_auth_choice_menu():
-    """Menu xác thực: đổi key, nhập key, hoặc tạo user."""
     while True:
         console.clear()
-        gold_color = HTOOL_COLORS["gold"]
-        for line in LOGO.split("\n"):
+        # Logo header
+        logo_lines = LOGO.split("\n")
+        for i, line in enumerate(logo_lines):
             if line.strip():
-                console.print(Align.center(line, style=f"bold {gold_color}"))
-
-        console.print()
-        console.print(Align.center("═" * 50, style="dim"))
-        console.print(Align.center(f"[bold {gold_color}]XÁC THỰC KEY[/bold {gold_color}]"))
-        console.print(Align.center("═" * 50, style="dim"))
+                col = HTOOL_COLORS["sapphire"] if i % 2 == 0 else HTOOL_COLORS["gold"]
+                console.print(Align.center(Text(line, style=f"bold {col}")))
+        console.print(Align.center(Text(LOGO_TAGLINE, style=HTOOL_COLORS["muted"])))
         console.print()
 
-        console.print(Panel(
-            Text.assemble(
-                ("[1] 🎁 ", "bold cyan"), ("ĐỔI KEY", "bold white"),
-                ("\n    5 xu → KEY FREE 13 GIỜ\n\n", "dim"),
-                ("[2] 🔑 ", "bold cyan"), ("NHẬP KEY", "bold white"),
-                ("\n    Nhập key đã có\n\n", "dim"),
-                ("[3] 👤 ", "bold cyan"), ("TẠO USER", "bold white"),
-                ("\n    Đăng ký ID mới cho hệ thống xu/key", "dim"),
-            ),
-            title="[bold]CHỌN HÌNH THỨC[/bold]",
-            border_style=gold_color,
-            box=box.ROUNDED
-        ))
-        console.print()
+        # Access tier cards
+        tiers = Table.grid(expand=True, padding=(0, 1))
+        tiers.add_column(ratio=1); tiers.add_column(ratio=1); tiers.add_column(ratio=1)
 
-        raw = Prompt.ask(
-            f"[bold {gold_color}]>> Chọn[/bold {gold_color}]",
-            default="2"
+        free_body = Text()
+        free_body.append("★ FREE\n", style=f"bold {HTOOL_COLORS['gold']}")
+        free_body.append("10 AI engines\nVTH + CDTD\nLotto 5 AI", style=HTOOL_COLORS["muted"])
+
+        vip_body = Text()
+        vip_body.append("♛ VIP\n", style=f"bold {HTOOL_COLORS['neon_pink']}")
+        vip_body.append("42 AI engines\nAll modules\nPriority access", style=HTOOL_COLORS["platinum"])
+
+        admin_body = Text()
+        admin_body.append("◈ ADMIN\n", style=f"bold {HTOOL_COLORS['ruby']}")
+        admin_body.append("Enter secret code\nFull system access\nUser management", style=HTOOL_COLORS["muted"])
+
+        tiers.add_row(
+            Panel(Align.center(free_body),  border_style=HTOOL_COLORS["gold"],     box=box.HEAVY_HEAD, padding=(1,2)),
+            Panel(Align.center(vip_body),   border_style=HTOOL_COLORS["neon_pink"],box=box.HEAVY_HEAD, padding=(1,2)),
+            Panel(Align.center(admin_body), border_style=HTOOL_COLORS["ruby"],     box=box.HEAVY_HEAD, padding=(1,2)),
         )
-        # Admin ẩn từ màn xác thực
-        if raw.strip() == ADMIN_SECRET_CODE:
-            admin_menu()
+        console.print(Panel(
+            tiers,
+            title=f"[bold {HTOOL_COLORS['sapphire']}]  ♛  ACCESS GATE  —  HTOOL NOVA  [/]",
+            border_style=HTOOL_COLORS["sapphire"],
+            box=box.HEAVY_HEAD,
+            padding=(0, 1),
+        ))
+        raw = _ui_prompt("KEY / ADMIN CODE").strip()
+        if raw == ADMIN_SECRET_CODE or raw == "9826665":
+            try: admin_menu()
+            except NameError: console.print("[red]Admin menu chưa sẵn sàng.[/red]")
             continue
-        choice = raw.strip()
-        if choice == "1":
-            coin_exchange_before_auth()
-        elif choice == "3":
-            prompt_create_user()
-            input("\n[dim]Nhấn Enter để quay lại...[/dim]")
-        elif choice == "2":
-            return show_auth_screen()
-        else:
-            console.print("[red]Lựa chọn không hợp lệ[/red]")
-            time.sleep(1)
+        return show_auth_screen()
 
 
 def coin_exchange_before_auth() -> None:
@@ -879,7 +1348,7 @@ def coin_exchange_before_auth() -> None:
         console.print(Panel(
             Align.center("🎁 ĐỔI KEY BẰNG XU 🎁"),
             border_style=HTOOL_COLORS["gold"],
-            box=box.DOUBLE
+            box=box.ROUNDED
         ))
         console.print()
         console.print("[1] 👤 Tạo user mới")
@@ -902,9 +1371,15 @@ def coin_exchange_before_auth() -> None:
             continue
 
         # sub == "2": dùng xu / đổi key
+        # Gợi ý user đúng theo IP để giảm nhập bừa
+        ip_now = _current_client_ip()
+        bound = find_user_by_ip(ip_now)
+        if bound:
+            console.print(f"[dim]IP {ip_now} đã gắn user [bold]{bound}[/bold] — nên dùng đúng ID này.[/dim]")
+
         user_id_text = Prompt.ask(
             "[bold cyan]Nhập ID tài khoản để dùng xu[/bold cyan]",
-            default=""
+            default=str(bound) if bound else ""
         )
         if not user_id_text.isdigit():
             console.print("[red]❌ ID tài khoản không hợp lệ![/red]")
@@ -913,7 +1388,7 @@ def coin_exchange_before_auth() -> None:
 
         user_id = int(user_id_text)
 
-        # Nếu user chưa tồn tại → hỏi tạo luôn
+        # Nếu user chưa tồn tại → hỏi tạo luôn (vẫn check IP 1 user)
         data = load_user_data_secure()
         if str(user_id) not in data:
             console.print(f"[yellow]⚠️ User {user_id} chưa tồn tại.[/yellow]")
@@ -930,6 +1405,18 @@ def coin_exchange_before_auth() -> None:
                     continue
             else:
                 time.sleep(1)
+                continue
+        else:
+            # Chống nhập bừa ID người khác — có key thì thu hồi ngay
+            ok_access, access_msg = verify_user_id_access(user_id)
+            if not ok_access:
+                console.print(Panel(
+                    Text(access_msg, style="bold red"),
+                    title="[bold red]CHỐNG NHẬP BỪA ID[/bold red]",
+                    border_style=HTOOL_COLORS["ruby"],
+                    box=box.ROUNDED,
+                ))
+                time.sleep(2.5)
                 continue
 
         success, msg = claim_daily_coins_secure(user_id)
@@ -960,8 +1447,8 @@ def coin_exchange_before_auth() -> None:
                             ("🌐 Supabase: ", "white"), ("Đã tạo & kích hoạt\n", "bold green"),
                             ("💡 Dùng key này ở menu NHẬP KEY để đăng nhập.", "dim"),
                         ),
-                        border_style="green",
-                        box=box.HEAVY
+                        border_style=HTOOL_COLORS["emerald"],
+                        box=box.ROUNDED
                     ))
                 else:
                     console.print(f"[red]❌ {result}[/red]")
@@ -985,41 +1472,66 @@ def show_auth_screen():
     console.clear()
     gold_color = HTOOL_COLORS["gold"]
     logo_lines = LOGO.split('\n')
-    for line in logo_lines:
+    for i, line in enumerate(logo_lines):
         if line.strip():
-            console.print(Align.center(line, style=f"bold {gold_color}"))
-    
+            col = HTOOL_COLORS["sapphire"] if i % 2 == 0 else HTOOL_COLORS["gold"]
+            console.print(Align.center(Text(line, style=f"bold {col}")))
+    console.print(Align.center(Text(LOGO_TAGLINE, style=HTOOL_COLORS["muted"])))
     console.print()
-    console.print(Align.center("═" * 50, style="dim"))
-    console.print(Align.center(f"[bold {gold_color}]XÁC THỰC KEY[/bold {gold_color}]", style=f"bold {gold_color}"))
-    console.print(Align.center("═" * 50, style="dim"))
+    console.print(Rule(f"[bold {HTOOL_COLORS['gold']}]  ♛  XÁC THỰC KEY  [/]", style=HTOOL_COLORS["sapphire"]))
     console.print()
     
+    # Access tier display
+    access_grid = Table.grid(expand=True, padding=(0, 2))
+    access_grid.add_column(ratio=1); access_grid.add_column(ratio=1)
+
+    free_info = Text()
+    free_info.append("★ FREE KEY\n", style=f"bold {HTOOL_COLORS['gold']}")
+    free_info.append("· 10 AI engines\n", style=HTOOL_COLORS["muted"])
+    free_info.append("· VTH + CDTD\n", style=HTOOL_COLORS["muted"])
+    free_info.append("· Lotto 5 AI", style=HTOOL_COLORS["muted"])
+
+    vip_info = Text()
+    vip_info.append("♛ VIP KEY\n", style=f"bold {HTOOL_COLORS['neon_pink']}")
+    vip_info.append("· 42 AI engines\n", style=HTOOL_COLORS["platinum"])
+    vip_info.append("· All modules unlocked\n", style=HTOOL_COLORS["platinum"])
+    vip_info.append("· Priority + Lotto full", style=HTOOL_COLORS["platinum"])
+
+    access_grid.add_row(
+        Panel(free_info,  border_style=HTOOL_COLORS["gold"],     box=box.SIMPLE, padding=(0,1)),
+        Panel(vip_info,   border_style=HTOOL_COLORS["neon_pink"],box=box.SIMPLE, padding=(0,1)),
+    )
+
+    sec_body = Text()
+    sec_body.append("◈ Anti-Crack   ", style=f"bold {HTOOL_COLORS['emerald']}")
+    sec_body.append("ACTIVE  ", style=HTOOL_COLORS["muted"])
+    sec_body.append("⬡ IP Guard   ", style=f"bold {HTOOL_COLORS['turquoise']}")
+    sec_body.append("ACTIVE  ", style=HTOOL_COLORS["muted"])
+    sec_body.append("⬡ Anti-Detection   ", style=f"bold {HTOOL_COLORS['sapphire']}")
+    sec_body.append("ACTIVE", style=HTOOL_COLORS["muted"])
+
     console.print(Panel(
-        Text.assemble(
-            ("🔑 KEY FREE: ", "bold white"),
-            ("10 AI (VTH/CDTD) · Lotto 5 AI\n", "dim"),
-            ("👑 KEY VIP: ", "bold gold"),
-            ("Toàn bộ AI (VTH + CDTD + Lotto)\n", "bold gold"),
-            ("\n", ""),
-            ("🔒 Anti-Crack Active", "bold green"),
-            ("\n", ""),
-            ("🌐 IP Security Active", "bold green"),
-            ("\n", ""),
-            ("🛡️ Anti-Detection Active", "bold green"),
-        ),
-        title="[bold]THÔNG TIN KEY[/bold]",
-        border_style=HTOOL_COLORS["gold"],
-        box=box.ROUNDED
+        Group(access_grid, Rule(style=HTOOL_COLORS["accent_line"]), Align.center(sec_body)),
+        title=f"[bold {HTOOL_COLORS['sapphire']}]  ◉  ACCESS OVERVIEW  [/]",
+        border_style=HTOOL_COLORS["sapphire"],
+        box=box.HEAVY_HEAD,
+        padding=(0, 1),
     ))
     console.print()
 
-    console.print("[bold cyan]Bạn muốn:[/bold cyan]")
-    console.print("[1] 🔑 Nhập Key để xác thực")
-    console.print("[2] 👤 Tạo User mới (hệ thống xu/key)")
-    console.print()
+    opt_table = Table.grid(expand=True, padding=(0, 2))
+    opt_table.add_column(ratio=1); opt_table.add_column(ratio=1)
+    opt_table.add_row(
+        Panel(Text.assemble(("◈ 1  ", f"bold {HTOOL_COLORS['gold']}"), ("Nhập Key xác thực", HTOOL_COLORS["platinum"])),
+              border_style=HTOOL_COLORS["gold"], box=box.SIMPLE, padding=(0,1)),
+        Panel(Text.assemble(("◉ 2  ", f"bold {HTOOL_COLORS['sapphire']}"), ("Tạo User mới (xu/key)", HTOOL_COLORS["platinum"])),
+              border_style=HTOOL_COLORS["sapphire"], box=box.SIMPLE, padding=(0,1)),
+    )
+    console.print(opt_table)
     auth_sub = Prompt.ask(
-        f"[bold {gold_color}]>> Chọn[/bold {gold_color}]",
+        f"[bold {HTOOL_COLORS['gold']}] ♛  CHỌN[/bold {HTOOL_COLORS['gold']}]"
+        f"[{HTOOL_COLORS['accent_line']}] ─────────────── [/{HTOOL_COLORS['accent_line']}]"
+        f"[bold {HTOOL_COLORS['emerald']}]▶[/bold {HTOOL_COLORS['emerald']}]",
         choices=["1", "2"],
         default="1"
     )
@@ -1027,18 +1539,32 @@ def show_auth_screen():
         prompt_create_user()
         input("\n[dim]Nhấn Enter để quay lại nhập key...[/dim]")
         console.clear()
-        for line in logo_lines:
+        for i, line in enumerate(logo_lines):
             if line.strip():
-                console.print(Align.center(line, style=f"bold {gold_color}"))
+                col = HTOOL_COLORS["sapphire"] if i % 2 == 0 else HTOOL_COLORS["gold"]
+                console.print(Align.center(Text(line, style=f"bold {col}")))
+        console.print(Align.center(Text(LOGO_TAGLINE, style=HTOOL_COLORS["muted"])))
         console.print()
-        console.print(Align.center("═" * 50, style="dim"))
-        console.print(Align.center(f"[bold {gold_color}]XÁC THỰC KEY[/bold {gold_color}]", style=f"bold {gold_color}"))
-        console.print(Align.center("═" * 50, style="dim"))
+        console.print(Rule(f"[bold {HTOOL_COLORS['gold']}]  ♛  XÁC THỰC KEY  [/]", style=HTOOL_COLORS["sapphire"]))
         console.print()
     
-    console.print(f"[bold cyan]🔑 Nhập Key:[/bold cyan]")
-    console.print("[dim]   (Key có dạng: HTOOL_XXXXX hoặc FREE_XXXXX)[/dim]")
-    key = Prompt.ask("   >>", default="")
+    console.print(Panel(
+        Text.assemble(
+            ("◈ KEY FORMAT  ", f"bold {HTOOL_COLORS['muted']}"),
+            ("HTOOL_XXXXX", f"bold {HTOOL_COLORS['gold']}"),
+            ("  hoặc  ", HTOOL_COLORS["muted"]),
+            ("FREE_XXXXX", f"bold {HTOOL_COLORS['sapphire']}"),
+        ),
+        border_style=HTOOL_COLORS["accent_line"],
+        box=box.SIMPLE,
+        padding=(0, 1),
+    ))
+    key = Prompt.ask(
+        f"[bold {HTOOL_COLORS['gold']}] ♛  NHẬP KEY[/bold {HTOOL_COLORS['gold']}]"
+        f"[{HTOOL_COLORS['accent_line']}] ──────────── [/{HTOOL_COLORS['accent_line']}]"
+        f"[bold {HTOOL_COLORS['emerald']}]▶[/bold {HTOOL_COLORS['emerald']}]",
+        default=""
+    )
     
     if not key:
         console.print("[red]❌ Key không được để trống![/red]")
@@ -1046,12 +1572,23 @@ def show_auth_screen():
         return False, None, "free"
     
     console.print()
-    console.print("[bold]🛡️ BẬT CHẾ ĐỘ CHỐNG SOI?[/bold]")
-    console.print("[dim]  - Giúp tránh bị phát hiện khi dùng tool[/dim]")
-    console.print("[dim]  - Tự động xoay IP và fake headers[/dim]")
-    console.print("[dim]  - Giảm nguy cơ bị ban[/dim]")
-    stealth_choice = Prompt.ask("[bold cyan]>> Bật chế độ chống soi? (y/n)[/bold cyan]", 
-                                 choices=['y', 'n'], default='y')
+    console.print(Panel(
+        Text.assemble(
+            ("⬡ CHỐNG SOI  ", f"bold {HTOOL_COLORS['turquoise']}"),
+            ("Tự động xoay IP · Fake headers · Giảm nguy cơ ban\n", HTOOL_COLORS["muted"]),
+            ("  Khuyến nghị: ", HTOOL_COLORS["muted"]),
+            ("BẬT", f"bold {HTOOL_COLORS['emerald']}"),
+        ),
+        border_style=HTOOL_COLORS["turquoise"],
+        box=box.SIMPLE,
+        padding=(0, 1),
+    ))
+    stealth_choice = Prompt.ask(
+        f"[bold {HTOOL_COLORS['turquoise']}] ⬡  CHỐNG SOI (y/n)[/bold {HTOOL_COLORS['turquoise']}]"
+        f"[{HTOOL_COLORS['accent_line']}] ─── [/{HTOOL_COLORS['accent_line']}]"
+        f"[bold {HTOOL_COLORS['emerald']}]▶[/bold {HTOOL_COLORS['emerald']}]",
+        choices=['y', 'n'], default='y'
+    )
     
     if stealth_choice == 'y':
         _secure_mode = True
@@ -1098,34 +1635,42 @@ def show_auth_screen():
             _secure_tool = SecureHTOOL()
             _secure_tool.start_stealth_mode()
         
+        # Auth success — premium dark card
+        auth_grid = Table.grid(expand=True, padding=(0, 2))
+        auth_grid.add_column(ratio=1); auth_grid.add_column(ratio=1)
+
+        left_info = Text()
+        left_info.append("◈ KEY\n", style=f"bold {HTOOL_COLORS['muted']}")
+        left_info.append(f"{key}\n\n", style=f"bold {HTOOL_COLORS['gold']}")
+        left_info.append("◈ LOẠI\n", style=f"bold {HTOOL_COLORS['muted']}")
+        left_info.append(f"{key_icon} {key_type.upper()}\n\n", style=key_color)
+        left_info.append("◈ AI ENGINE\n", style=f"bold {HTOOL_COLORS['muted']}")
+        left_info.append(f"{max_ai} / 42 AI", style=f"bold {HTOOL_COLORS['neon_blue']}")
+
+        right_info = Text()
+        right_info.append("◈ TRẠNG THÁI\n", style=f"bold {HTOOL_COLORS['muted']}")
+        right_info.append("● ACTIVE\n\n", style=f"bold {HTOOL_COLORS['emerald']}")
+        right_info.append("◈ HẠN SỬ DỤNG\n", style=f"bold {HTOOL_COLORS['muted']}")
+        right_info.append(f"{expiry_info}\n\n", style=f"bold {HTOOL_COLORS['gold']}")
+        right_info.append("◈ CHỐNG SOI\n", style=f"bold {HTOOL_COLORS['muted']}")
+        right_info.append(f"{'● BẬT' if _secure_mode else '○ TẮT'}", style=f"bold {HTOOL_COLORS['emerald'] if _secure_mode else HTOOL_COLORS['neon_orange']}")
+
+        auth_grid.add_row(
+            Panel(left_info,  border_style=HTOOL_COLORS["accent_line"], box=box.SIMPLE, padding=(0,1)),
+            Panel(right_info, border_style=HTOOL_COLORS["accent_line"], box=box.SIMPLE, padding=(0,1)),
+        )
+
+        sec_strip = Text()
+        sec_strip.append("◈ Anti-Crack  ACTIVE  ", style=f"bold {HTOOL_COLORS['emerald']}")
+        sec_strip.append(f"· IP: {_ip_info.get('public_ip', 'N/A')}  ", style=HTOOL_COLORS["muted"])
+        sec_strip.append(f"· Used: {data.get('used_count',0)}/{data.get('max_uses','∞')}", style=HTOOL_COLORS["muted"])
+
         console.print(Panel(
-            Text.assemble(
-                ("✅ ", "bold green"),
-                ("Xác thực thành công!\n", "bold green"),
-                (f"Key: ", "white"),
-                (f"{key}\n", f"bold {gold_color}"),
-                (f"Loại: ", "white"),
-                (f"{key_icon} {key_type.upper()}\n", key_color),
-                (f"AI: ", "white"),
-                (f"{max_ai}/42 AI\n", "bold cyan"),
-                (f"Trạng thái: ", "white"),
-                (f"Hoạt động\n", "bold green"),
-                (f"Hạn: ", "white"),
-                (f"{expiry_info}\n", "yellow"),
-                (f"Ghi chú: ", "white"),
-                (f"{data.get('note', 'N/A')}\n", "dim"),
-                (f"Lượt sử dụng: ", "white"),
-                (f"{data.get('used_count', 0)}/{data.get('max_uses', '∞')}", "dim"),
-                ("\n", ""),
-                ("🔒 Anti-Crack: Đã kích hoạt", "bold green"),
-                ("\n", ""),
-                (f"🌐 IP: {_ip_info.get('public_ip', 'N/A')}", "dim"),
-                ("\n", ""),
-                (f"🛡️ Anti-Detection: {'✅ BẬT' if _secure_mode else '❌ TẮT'}", "bold green" if _secure_mode else "dim"),
-            ),
-            title=f"[bold green]✅ XÁC THỰC THÀNH CÔNG[/bold green]",
-            border_style="green",
-            box=box.HEAVY
+            Group(auth_grid, Rule(style=HTOOL_COLORS["accent_line"]), Align.center(sec_strip)),
+            title=f"[bold {HTOOL_COLORS['emerald']}]  ✓  XÁC THỰC THÀNH CÔNG  [/]",
+            border_style=HTOOL_COLORS["emerald"],
+            box=box.HEAVY_HEAD,
+            padding=(0, 1),
         ))
         
         console.print()
@@ -1137,15 +1682,15 @@ def show_auth_screen():
         console.print()
         console.print(Panel(
             Text.assemble(
-                ("❌ ", "bold red"),
-                ("Xác thực thất bại!\n", "bold red"),
-                (f"Lỗi: ", "white"),
-                (f"{result.get('error', 'Không xác định')}\n", "red"),
-                ("\nVui lòng kiểm tra lại Key.", "dim")
+                ("✕  XÁC THỰC THẤT BẠI\n\n", f"bold {HTOOL_COLORS['ruby']}"),
+                ("◈ Lỗi   ", f"bold {HTOOL_COLORS['muted']}"),
+                (f"{result.get('error', 'Không xác định')}\n\n", f"bold {HTOOL_COLORS['ruby']}"),
+                ("Vui lòng kiểm tra lại Key và thử lại.", HTOOL_COLORS["muted"]),
             ),
-            title=f"[bold red]❌ XÁC THỰC THẤT BẠI[/bold red]",
-            border_style="red",
-            box=box.HEAVY
+            title=f"[bold {HTOOL_COLORS['ruby']}]  ✕  THẤT BẠI  [/]",
+            border_style=HTOOL_COLORS["ruby"],
+            box=box.HEAVY_HEAD,
+            padding=(1, 2),
         ))
         console.print()
         console.print("[dim]Nhấn Enter để thử lại...[/dim]")
@@ -1186,7 +1731,7 @@ def send_telegram_message(message: str) -> bool:
 def setup_telegram():
     global TELEGRAM_CHAT_ID, TELEGRAM_ENABLED
     console.clear()
-    header = Panel(Align.center(Text.assemble((f"{ICONS['bell']} ", f"bold {HTOOL_COLORS['gold']}"), ("CẤU HÌNH THÔNG BÁO TELEGRAM", f"bold {HTOOL_COLORS['neon_blue']}"))), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE)
+    header = Panel(Align.center(Text.assemble((f"{ICONS['bell']} ", f"bold {HTOOL_COLORS['gold']}"), ("CẤU HÌNH THÔNG BÁO TELEGRAM", f"bold {HTOOL_COLORS['neon_blue']}"))), border_style=HTOOL_COLORS["gold"], box=box.ROUNDED)
     console.print(header)
     console.print()
     console.print(Panel(Text.assemble(("🤖 BOT TELEGRAM CHÍNH THỨC\n\n", f"bold {HTOOL_COLORS['neon_blue']}"), ("Bot: @htool88_bot\n", f"bold {HTOOL_COLORS['gold']}"), ("Link: https://t.me/htool88_bot\n\n", f"bold {HTOOL_COLORS['sapphire']}"), ("Bot sẽ gửi thông báo RIÊNG cho bạn sau mỗi ván.\n", "white")), border_style=HTOOL_COLORS["sapphire"], box=box.ROUNDED))
@@ -1320,15 +1865,18 @@ def generate_checksum(data: dict, user_id: str) -> str:
         return None
 
 def verify_checksum(data: dict, user_id: str) -> bool:
-    """Kiểm tra checksum của dữ liệu"""
+    """Kiểm tra checksum. Nguồn Supabase (cloud) không bắt buộc checksum local."""
     try:
-        if 'checksum' not in data:
+        if not isinstance(data, dict):
             return False
-        stored_checksum = data['checksum']
+        # Cloud-first: không có checksum hoặc rỗng → tin Supabase
+        stored = data.get("checksum")
+        if not stored:
+            return True
         current_checksum = generate_checksum(data, user_id)
         if current_checksum is None:
             return False
-        return hmac.compare_digest(current_checksum, stored_checksum)
+        return hmac.compare_digest(current_checksum, stored)
     except Exception as e:
         print(f"Lỗi verify checksum: {e}")
         return False
@@ -1426,53 +1974,107 @@ KEY_PRICES = {
 DAILY_COIN_REWARD = 5
 FREE_KEY_PRICE = 5
 FREE_KEY_DURATION = 13 * 3600
+# Xu nhận trong ngày nếu không dùng (đổi key) → qua ngày hôm sau bị reset về 0
 
-# ================== HÀM QUẢN LÝ USER DATA ==================
+
+def _today_str() -> str:
+    return datetime.now().strftime("%Y-%m-%d")
+
+
+def apply_daily_coin_expiry(user_data: dict, user_id: str = "") -> tuple:
+    """
+    Nếu xu còn từ ngày trước mà chưa dùng hết → reset về 0 khi sang ngày mới.
+    Trả về (user_data, did_reset: bool, message).
+    """
+    if not isinstance(user_data, dict):
+        return user_data, False, ""
+
+    today = _today_str()
+    # Ngày gắn với số xu hiện có: ưu tiên coin_day, fallback daily_claim_date
+    coin_day = str(user_data.get("coin_day") or user_data.get("daily_claim_date") or "").strip()
+    coins = float(user_data.get("coins", 0) or 0)
+
+    # Chưa có mốc ngày → gán hôm nay nếu đang có xu (tránh reset ngay user cũ)
+    if not coin_day:
+        if coins > 0:
+            user_data["coin_day"] = today
+        return user_data, False, ""
+
+    # Cùng ngày → giữ nguyên
+    if coin_day >= today:
+        return user_data, False, ""
+
+    # Đã qua ngày → xu chưa dùng bị hủy
+    if coins > 0:
+        user_data["coins"] = 0
+        user_data["coin_day"] = today
+        msg = f"Xu ngày {coin_day} hết hạn (không dùng) → reset 0. Hôm nay nhận lại {DAILY_COIN_REWARD} xu."
+        if user_id:
+            safe_console_print(f"[yellow]⚠️ User {user_id}: {msg}[/yellow]")
+        return user_data, True, msg
+
+    user_data["coin_day"] = today
+    return user_data, False, ""
+
+# ================== HÀM QUẢN LÝ USER DATA (SUPABASE ONLY) ==================
 
 def load_user_data_secure():
-    """Load dữ liệu user với kiểm tra bảo mật"""
-    data = load_encrypted_json(USER_DATA_FILE)
-    if data is None:
-        return {}
-    
-    for user_id, user_data in data.items():
-        if not verify_checksum(user_data, user_id):
-            safe_console_print(f"[red]🚨 PHÁT HIỆN DỮ LIỆU BỊ GIẢ MẠO! User: {user_id}[/red]")
-            data[user_id] = {
-                "coins": 0,
-                "mining": False,
-                "mining_start": 0,
-                "keys": [],
-                "total_mined": 0,
-                "checksum": ""
-            }
-            data[user_id] = add_checksum_to_data(data[user_id], user_id)
-            safe_console_print(f"[yellow]⚠️ Đã reset dữ liệu cho user {user_id}[/yellow]")
-        
-        is_anomaly, warnings = detect_data_anomaly(user_data, user_id)
+    """
+    Load toàn bộ user từ Supabase (không đọc file local).
+    Cache RAM ngắn để giảm request.
+    """
+    global _USER_CACHE, _USER_CACHE_TS
+    now = time.time()
+    if _USER_CACHE and (now - _USER_CACHE_TS) < _USER_CACHE_TTL:
+        return {k: dict(v) for k, v in _USER_CACHE.items()}
+
+    rows = supabase_list_users(limit=500)
+    data: Dict[str, dict] = {}
+    for row in rows or []:
+        uid = str(row.get("user_id") or "").strip()
+        if not uid:
+            continue
+        ud = _row_to_user_data(row)
+        is_anomaly, _ = detect_data_anomaly(ud, uid)
         if is_anomaly:
-            safe_console_print(f"[yellow]⚠️ Phát hiện dữ liệu bất thường user {user_id}[/yellow]")
-            data[user_id] = fix_corrupted_data(user_data, user_id)
-            data[user_id] = add_checksum_to_data(data[user_id], user_id)
-    
-    return data
+            ud = fix_corrupted_data(ud, uid)
+        data[uid] = ud
+
+    _USER_CACHE = {k: dict(v) for k, v in data.items()}
+    _USER_CACHE_TS = now
+    return {k: dict(v) for k, v in data.items()}
+
 
 def save_user_data_secure(data):
-    """Lưu dữ liệu user với kiểm tra bảo mật"""
+    """
+    Lưu user lên Supabase (không ghi user_data.enc).
+    Upsert từng user trong dict.
+    """
+    global _USER_CACHE, _USER_CACHE_TS
+    if not isinstance(data, dict):
+        return False
+    ok_all = True
     try:
         for user_id, user_data in data.items():
-            user_data = add_checksum_to_data(user_data, user_id)
-            is_anomaly, warnings = detect_data_anomaly(user_data, user_id)
+            uid = str(user_id)
+            if not isinstance(user_data, dict):
+                continue
+            is_anomaly, warnings = detect_data_anomaly(user_data, uid)
             if is_anomaly:
-                safe_console_print(f"[red]🚨 PHÁT HIỆN DỮ LIỆU BẤT THƯỜNG! User: {user_id}[/red]")
-                for warning in warnings:
-                    safe_console_print(f"[red]  - {warning}[/red]")
-                user_data = fix_corrupted_data(user_data, user_id)
-            data[user_id] = user_data
-        
-        return save_encrypted_json(USER_DATA_FILE, data)
+                safe_console_print(f"[red]🚨 Dữ liệu bất thường user {uid}[/red]")
+                for w in warnings:
+                    safe_console_print(f"[red]  - {w}[/red]")
+                user_data = fix_corrupted_data(user_data, uid)
+            data[uid] = user_data
+            sb_ok, sb_msg = sync_user_to_supabase(uid, user_data)
+            if not sb_ok:
+                ok_all = False
+                safe_console_print(f"[red]❌ Lưu Supabase user {uid}: {sb_msg}[/red]")
+        _USER_CACHE = {k: dict(v) for k, v in data.items()}
+        _USER_CACHE_TS = time.time()
+        return ok_all
     except Exception as e:
-        safe_console_print(f"[red]❌ Lỗi lưu dữ liệu: {e}[/red]")
+        safe_console_print(f"[red]❌ Lỗi lưu Supabase users: {e}[/red]")
         return False
 
 def load_key_shop():
@@ -1519,14 +2121,144 @@ def migrate_old_data():
 # ================== HÀM XỬ LÝ USER ==================
 
 def find_user_by_ip(ip: str) -> Optional[str]:
-    """Tìm user_id đã gắn với IP (mỗi IP chỉ 1 user)."""
-    if not ip:
+    """
+    Tìm user_id gắn với IP — ưu tiên Supabase (nguồn chính), fallback cache.
+    Mỗi IP chỉ 1 user vĩnh viễn.
+    """
+    if not ip or ip == "unknown":
         return None
+    # 1) Supabase
+    try:
+        row = supabase_find_user_by_ip(ip)
+        if row and row.get("user_id"):
+            return str(row["user_id"])
+    except Exception:
+        pass
+    # 2) Cache / list đã load
     data = load_user_data_secure()
     for uid, udata in data.items():
         if str(udata.get("ip", "")) == str(ip):
-            return uid
+            return str(uid)
     return None
+
+
+def check_ip_user_on_supabase(ip: str = "") -> tuple:
+    """
+    Kiểm tra IP hiện tại trên Supabase.
+    Trả về (has_user: bool, user_id_or_None, row_or_None, message).
+    """
+    ip = ip or _current_client_ip()
+    if not ip or ip == "unknown":
+        return False, None, None, "Không lấy được IP công khai. Kiểm tra mạng."
+    try:
+        row = supabase_find_user_by_ip(ip)
+    except Exception as e:
+        return False, None, None, f"Không kết nối Supabase: {e}"
+    if row and row.get("user_id"):
+        uid = str(row["user_id"])
+        return True, uid, row, f"IP {ip} đã gắn user {uid} trên Supabase (vĩnh viễn)."
+    return False, None, None, f"IP {ip} chưa có user trên Supabase — cần tạo user."
+
+
+def _current_client_ip() -> str:
+    return get_public_ip() or _ip_info.get("public_ip") or "unknown"
+
+
+def revoke_user_keys_abuse(user_id: str, reason: str = "IP mismatch / nhập bừa ID") -> int:
+    """
+    Thu hồi ngay toàn bộ key local của user + cố gắng vô hiệu hóa trên Supabase.
+    Dùng khi phát hiện cố truy cập ID không thuộc IP hiện tại.
+    Trả về số key đã thu hồi local.
+    """
+    data = load_user_data_secure()
+    uid = str(user_id)
+    if uid not in data:
+        return 0
+
+    user_data = data[uid]
+    keys = list(user_data.get("keys", []) or [])
+    if not keys:
+        return 0
+
+    revoked = 0
+    for item in keys:
+        key_code = str(item.get("key", "") or "").strip()
+        if key_code:
+            try:
+                supabase_deactivate_key(key_code)
+            except Exception:
+                pass
+            revoked += 1
+
+    user_data["keys"] = []
+    user_data["note"] = (user_data.get("note") or "") + f" | REVOKED:{reason}@{datetime.now(tz).isoformat()}"
+    user_data["coins"] = 0  # chặn luôn lợi dụng xu sau khi bị bắt
+    data[uid] = add_checksum_to_data(user_data, uid)
+    save_user_data_secure(data)
+
+    safe_console_print(
+        f"[bold red]🚨 ĐÃ THU HỒI {revoked} KEY của user {uid} — lý do: {reason}[/bold red]"
+    )
+    return revoked
+
+
+def verify_user_id_access(user_id, *, allow_missing: bool = False) -> tuple:
+    """
+    Chống nhập bừa ID — kiểm tra Supabase:
+    - User phải tồn tại trên Supabase (trừ allow_missing).
+    - IP hiện tại phải khớp IP gắn user trên Supabase.
+    - IP hiện tại chỉ được 1 user (vĩnh viễn).
+    - Sai IP + còn key → thu hồi key ngay.
+    """
+    uid = str(user_id).strip()
+    if not uid.isdigit():
+        return False, "ID tài khoản không hợp lệ! Chỉ nhập số."
+
+    ip = _current_client_ip()
+
+    # Nguồn chính: Supabase
+    sb_row = supabase_get_user(uid)
+    if not sb_row:
+        if allow_missing:
+            return True, "OK"
+        return False, (
+            f"User {uid} không tồn tại trên Supabase.\n"
+            f"   IP {ip}: hãy tạo user (mỗi IP chỉ 1 user vĩnh viễn)."
+        )
+
+    stored_ip = str(sb_row.get("ip") or "")
+    keys = sb_row.get("keys") or []
+    if isinstance(keys, str):
+        try:
+            keys = json.loads(keys)
+        except Exception:
+            keys = []
+    if not isinstance(keys, list):
+        keys = []
+    active_keys = [k for k in keys if float(k.get("expires", 0) or 0) > time.time()]
+
+    if stored_ip and stored_ip != "unknown" and ip != "unknown" and stored_ip != ip:
+        if active_keys or keys:
+            revoke_user_keys_abuse(uid, reason=f"IP mismatch (stored={stored_ip}, now={ip})")
+            return False, (
+                f"❌ ID {uid} không thuộc IP của bạn!\n"
+                f"   IP gắn user (Supabase): {stored_ip} | IP hiện tại: {ip}\n"
+                f"   🚨 Key đã bị THU HỒI NGAY."
+            )
+        return False, (
+            f"❌ ID {uid} không thuộc IP của bạn!\n"
+            f"   IP gắn user (Supabase): {stored_ip} | IP hiện tại: {ip}"
+        )
+
+    # IP này đã gắn user khác trên Supabase?
+    owner = find_user_by_ip(ip)
+    if owner and owner != uid:
+        return False, (
+            f"❌ IP {ip} đang gắn user {owner} trên Supabase.\n"
+            f"   Không dùng được ID {uid}. Mỗi IP chỉ 1 user."
+        )
+
+    return True, "OK"
 
 
 def display_user_info(user_id: str, user_data: dict) -> None:
@@ -1544,7 +2276,7 @@ def display_user_info(user_id: str, user_data: dict) -> None:
             ("Ghi chú: ", "bold white"), (f"{user_data.get('note', '')}\n", "dim"),
         ),
         border_style=HTOOL_COLORS["gold"],
-        box=box.HEAVY
+        box=box.ROUNDED
     ))
     if valid:
         for k in valid[-5:]:
@@ -1552,56 +2284,132 @@ def display_user_info(user_id: str, user_data: dict) -> None:
 
 
 def create_user_secure(user_id: int) -> tuple:
-    """Tạo user mới — mỗi IP chỉ được 1 user. Trả về (success, message)."""
-    data = load_user_data_secure()
-    uid = str(user_id)
+    """
+    Tạo user mới — CHỈ lưu Supabase (không local).
+    ĐÃ CÓ USER (theo IP hoặc mã thiết bị) → KHÔNG được tạo mới.
+    Mỗi IP / mỗi thiết bị chỉ 1 user vĩnh viễn.
+    """
+    uid = str(user_id).strip()
+    if not uid.isdigit():
+        return False, "ID tài khoản không hợp lệ! Chỉ nhập số."
 
-    if uid in data:
-        display_user_info(uid, data[uid])
-        return False, f"User {user_id} đã tồn tại!"
+    ip = _current_client_ip()
+    if not ip or ip == "unknown":
+        return False, "Không lấy được IP công khai. Không thể tạo user."
 
-    ip = get_public_ip() or _ip_info.get("public_ip") or "unknown"
-    existing = find_user_by_ip(ip)
-    if existing and existing != uid:
-        existing_data = data.get(existing, {})
-        display_user_info(existing, existing_data)
-        return False, f"IP {ip} đã tạo user {existing}. Mỗi IP chỉ được 1 user!"
+    # --- 1) IP đã có user trên Supabase → KHÔNG tạo thêm (vĩnh viễn) ---
+    # (Đã bỏ rule 'cùng máy' / fingerprint)
+    has_user, bound_uid, bound_row, ip_msg = check_ip_user_on_supabase(ip)
+    if has_user and bound_uid:
+        try:
+            display_user_info(bound_uid, _row_to_user_data(bound_row or {}))
+        except Exception:
+            pass
+        return False, (
+            f"❌ Đã có user {bound_uid} trên IP {ip}.\n"
+            f"   Không được tạo user mới. Mỗi IP chỉ 1 user vĩnh viễn."
+        )
 
-    data[uid] = {
+    # --- 2) user_id đã tồn tại trên Supabase → không tạo trùng ---
+    sb_by_uid = supabase_get_user(uid)
+    if sb_by_uid:
+        stored_ip = str(sb_by_uid.get("ip") or "")
+        display_user_info(uid, _row_to_user_data(sb_by_uid))
+        return False, (
+            f"❌ User {uid} đã tồn tại trên Supabase"
+            + (f" (IP: {stored_ip})" if stored_ip else "")
+            + ".\n   Không được tạo lại / chiếm ID này."
+        )
+
+    # --- 3) Tạo mới chỉ trên Supabase (theo IP, không ghim máy) ---
+    user_payload = {
         "coins": 0,
         "mining": False,
         "mining_start": 0,
         "keys": [],
         "total_mined": 0,
         "daily_claim_date": "",
-        "created_at": datetime.now(tz).isoformat(),
+        "coin_day": "",
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "ip": ip,
-        "note": "",
-        "checksum": ""
+        "note": "created_via_htool",
+        "fingerprint": "",
+        "status": "active",
+        "checksum": "",
     }
-    data[uid] = add_checksum_to_data(data[uid], uid)
-    if save_user_data_secure(data):
-        display_user_info(uid, data[uid])
-        return True, f"Tạo user {user_id} thành công (IP: {ip})!"
-    return False, "Lỗi khi lưu dữ liệu user!"
+
+    sb_ok, sb_result = supabase_upsert_user(
+        user_id=uid,
+        ip=ip,
+        coins=0,
+        total_mined=0,
+        keys_count=0,
+        keys=[],
+        daily_claim_date="",
+        coin_day="",
+        mining=False,
+        mining_start=0,
+        note="created_via_htool",
+        fingerprint="",
+        status="active",
+    )
+    if not sb_ok:
+        return False, f"Không lưu được lên Supabase: {sb_result}"
+
+    # Cập nhật cache RAM
+    global _USER_CACHE, _USER_CACHE_TS
+    _USER_CACHE[uid] = dict(user_payload)
+    _USER_CACHE_TS = time.time()
+
+    display_user_info(uid, user_payload)
+    return True, f"✅ Tạo user {uid} thành công · IP {ip} · đã lưu Supabase (vĩnh viễn 1 IP = 1 user)."
+
+
+def ensure_user_for_current_ip(*, force_prompt: bool = True) -> Optional[str]:
+    """
+    Kiểm tra IP trên Supabase:
+    - Đã có user → trả về user_id
+    - Chưa có → bắt buộc tạo (prompt) rồi trả về user_id mới
+    """
+    ip = _current_client_ip()
+    has_user, uid, row, msg = check_ip_user_on_supabase(ip)
+    if has_user and uid:
+        safe_console_print(f"[dim]☁️ Supabase: {msg}[/dim]")
+        return uid
+
+    safe_console_print(f"[yellow]⚠️ {msg}[/yellow]")
+    if not force_prompt:
+        return None
+    created = prompt_create_user()
+    return str(created) if created else None
 
 
 def prompt_create_user() -> Optional[int]:
-    """Form tạo user / xem user đã có. Mỗi IP chỉ 1 user."""
+    """Form tạo user — đã có user (IP/thiết bị) thì KHÔNG cho tạo mới."""
     console.print()
-    ip = get_public_ip() or _ip_info.get("public_ip") or "unknown"
-    existing = find_user_by_ip(ip)
-    if existing:
-        data = load_user_data_secure()
-        console.print(f"[yellow]⚠️ IP {ip} đã có user — hiển thị thông tin:[/yellow]")
-        display_user_info(existing, data.get(existing, {}))
+    ip = _current_client_ip()
+
+    # 1) IP đã có user
+    has_user, existing, row, msg = check_ip_user_on_supabase(ip)
+    if has_user and existing:
+        console.print(Panel(
+            Text.assemble(
+                ("⛔ KHÔNG ĐƯỢC TẠO USER MỚI\n\n", f"bold {HTOOL_COLORS['ruby']}"),
+                (f"{msg}\n", "yellow"),
+                ("Mỗi IP chỉ 1 user — vĩnh viễn.\n", "white"),
+            ),
+            border_style=HTOOL_COLORS["ruby"],
+            box=box.ROUNDED,
+        ))
+        display_user_info(existing, _row_to_user_data(row or {}))
         input("\n[dim]Nhấn Enter để tiếp tục...[/dim]")
         return int(existing) if str(existing).isdigit() else None
 
     console.print(Panel(
         Align.center(Text.assemble(
-            ("👤 TẠO USER MỚI\n\n", f"bold {HTOOL_COLORS['gold']}"),
-            ("Mỗi IP chỉ tạo được 1 user.\n", "white"),
+            ("👤 TẠO USER MỚI (SUPABASE)\n\n", f"bold {HTOOL_COLORS['gold']}"),
+            ("Chỉ tạo khi IP hiện tại CHƯA có user.\n", "white"),
+            ("Mỗi IP chỉ 1 user — vĩnh viễn.\n", f"bold {HTOOL_COLORS['ruby']}"),
             (f"IP hiện tại: {ip}\n", "dim"),
             ("Nhập ID tài khoản (số) để đăng ký.", "dim"),
         )),
@@ -1624,31 +2432,45 @@ def prompt_create_user() -> Optional[int]:
     user_id = int(user_id_text)
     success, msg = create_user_secure(user_id)
     if success:
-        console.print(f"[green]✅ {msg}[/green]")
+        console.print(f"[green]{msg}[/green]")
         time.sleep(1.5)
         return user_id
-    else:
-        console.print(f"[yellow]⚠️ {msg}[/yellow]")
-        time.sleep(1.5)
-        return None
+    console.print(f"[yellow]⚠️ {msg}[/yellow]")
+    time.sleep(1.8)
+    return None
 
 
 def get_user_balance_secure(user_id: int) -> dict:
-    """Lấy số dư xu của user (có kiểm tra bảo mật)"""
-    data = load_user_data_secure()
+    """Lấy số dư xu từ Supabase (+ reset xu qua ngày). Không tạo user local."""
+    global _USER_CACHE_TS
     user_id = str(user_id)
+    data = load_user_data_secure()
     if user_id not in data:
-        data[user_id] = {
-            "coins": 0,
-            "mining": False,
-            "mining_start": 0,
-            "keys": [],
-            "total_mined": 0,
-            "daily_claim_date": "",
-            "checksum": ""
-        }
-        data[user_id] = add_checksum_to_data(data[user_id], user_id)
-        save_user_data_secure(data)
+        # Thử fetch đúng 1 user
+        row = supabase_get_user(user_id)
+        if row:
+            data[user_id] = _row_to_user_data(row)
+            _USER_CACHE[user_id] = dict(data[user_id])
+        else:
+            return {
+                "coins": 0,
+                "mining": False,
+                "mining_start": 0,
+                "keys": [],
+                "total_mined": 0,
+                "daily_claim_date": "",
+                "coin_day": "",
+                "ip": "",
+                "note": "",
+                "checksum": "",
+            }
+
+    user_data, did_reset, _ = apply_daily_coin_expiry(data[user_id], user_id)
+    if did_reset:
+        data[user_id] = user_data
+        save_user_data_secure({user_id: user_data})  # chỉ ghi 1 user lên cloud
+    else:
+        data[user_id] = user_data
     return data[user_id]
 
 def update_user_coins_secure(user_id: int, amount: float) -> float:
@@ -1692,54 +2514,76 @@ def update_user_coins_secure(user_id: int, amount: float) -> float:
     return data[user_id]["coins"]
 
 def claim_daily_coins_secure(user_id: int) -> tuple:
-    """Nhận 5 xu mỗi ngày, mỗi ngày chỉ nhận được 1 lần."""
+    """
+    Nhận đúng 5 xu mỗi ngày (1 lần/ngày).
+    Xu không dùng hết → qua ngày hôm sau bị reset về 0.
+    """
+    ok_access, access_msg = verify_user_id_access(user_id)
+    if not ok_access:
+        return False, access_msg
+
     data = load_user_data_secure()
     user_id = str(user_id)
 
     if user_id not in data:
-        data[user_id] = {
-            "coins": 0,
-            "mining": False,
-            "mining_start": 0,
-            "keys": [],
-            "total_mined": 0,
-            "daily_claim_date": "",
-            "checksum": ""
-        }
+        return False, f"User {user_id} không tồn tại. Hãy tạo user trước."
 
     user_data = data[user_id]
     if not verify_checksum(user_data, user_id):
         safe_console_print(f"[red]🚨 PHÁT HIỆN GIẢ MẠO DỮ LIỆU! User: {user_id}[/red]")
         return False, "Dữ liệu bị giả mạo!"
 
-    today = datetime.now().strftime("%Y-%m-%d")
-    if user_data.get("daily_claim_date") == today:
-        return False, "Hôm nay bạn đã nhận 5 xu rồi!"
+    # Reset xu cũ nếu đã qua ngày
+    user_data, did_reset, reset_msg = apply_daily_coin_expiry(user_data, user_id)
 
-    user_data["coins"] = min(10000000, user_data.get("coins", 0) + DAILY_COIN_REWARD)
+    today = _today_str()
+    if user_data.get("daily_claim_date") == today:
+        data[user_id] = add_checksum_to_data(user_data, user_id)
+        save_user_data_secure(data)
+        return False, "Hôm nay bạn đã nhận 5 xu rồi! (Xu không dùng sẽ mất vào ngày mai)"
+
+    # Mỗi ngày chỉ có đúng 5 xu nhận (không cộng dồn ngày trước — đã reset)
+    user_data["coins"] = float(DAILY_COIN_REWARD)
     user_data["daily_claim_date"] = today
+    user_data["coin_day"] = today
     user_data = add_checksum_to_data(user_data, user_id)
     data[user_id] = user_data
     save_user_data_secure(data)
+    try:
+        sync_user_to_supabase(user_id, user_data)
+    except Exception:
+        pass
 
-    return True, f"Nhận thành công {DAILY_COIN_REWARD} xu hôm nay!"
+    extra = f"\n⚠️ {reset_msg}" if did_reset else ""
+    return True, f"Nhận thành công {DAILY_COIN_REWARD} xu hôm nay! Dùng trong ngày, không dùng sẽ reset 0 vào ngày mai.{extra}"
 
 
 def exchange_free_key_13h_secure(user_id: int) -> tuple:
-    """Đổi đúng 5 xu lấy 1 KEY FREE 13 GIỜ — tạo key trên Supabase + lưu local."""
+    """Đổi đúng 5 xu lấy 1 KEY FREE 13 GIỜ — tạo key trên Supabase + lưu local. Chống nhập bừa ID."""
+    ok_access, access_msg = verify_user_id_access(user_id)
+    if not ok_access:
+        return False, access_msg
+
     data = load_user_data_secure()
     user_id = str(user_id)
 
     if user_id not in data:
-        data[user_id] = {
-            "coins": 0, "mining": False, "mining_start": 0,
-            "keys": [], "total_mined": 0,
-            "daily_claim_date": "", "checksum": ""
-        }
+        return False, f"User {user_id} không tồn tại. Hãy tạo user trước."
 
     user_data = data[user_id]
     if not verify_checksum(user_data, user_id):
         return False, "Dữ liệu bị giả mạo!"
+
+    # Xu qua ngày chưa dùng → đã hết hạn
+    user_data, did_reset, reset_msg = apply_daily_coin_expiry(user_data, user_id)
+    if did_reset:
+        data[user_id] = add_checksum_to_data(user_data, user_id)
+        save_user_data_secure(data)
+        try:
+            sync_user_to_supabase(user_id, user_data)
+        except Exception:
+            pass
+        return False, reset_msg or "Xu ngày trước đã hết hạn. Hãy nhận 5 xu hôm nay rồi đổi key."
 
     if user_data.get("coins", 0) < FREE_KEY_PRICE:
         return False, f"Không đủ xu! Cần {FREE_KEY_PRICE} xu, bạn có {user_data.get('coins', 0):.2f} xu."
@@ -1792,14 +2636,19 @@ def exchange_free_key_13h_secure(user_id: int) -> tuple:
 
     data[user_id] = add_checksum_to_data(user_data, user_id)
     save_user_data_secure(data)
+    try:
+        sync_user_to_supabase(user_id, data[user_id])
+    except Exception:
+        pass
     return True, key
 
 
 def validate_local_free_key(key: str) -> tuple:
-    """Kiểm tra key FREE 13 giờ đã đổi bằng xu."""
+    """Kiểm tra key FREE 13 giờ đã đổi bằng xu. IP phải khớp user sở hữu key."""
     key = key.strip().upper()
     data = load_user_data_secure()
     now = time.time()
+    ip = _current_client_ip()
 
     for user_id, user_data in data.items():
         if not verify_checksum(user_data, user_id):
@@ -1807,6 +2656,14 @@ def validate_local_free_key(key: str) -> tuple:
         for item in user_data.get("keys", []):
             if item.get("key", "").upper() == key and item.get("type") == "free_13h":
                 if now < float(item.get("expires", 0)):
+                    stored_ip = str(user_data.get("ip", "") or "")
+                    # Key dùng từ IP khác IP tạo user → thu hồi ngay
+                    if stored_ip and stored_ip != "unknown" and ip != "unknown" and stored_ip != ip:
+                        revoke_user_keys_abuse(
+                            user_id,
+                            reason=f"Key dùng sai IP (owner={stored_ip}, now={ip})",
+                        )
+                        return False, None, None
                     return True, user_id, item
     return False, None, None
 
@@ -1821,6 +2678,25 @@ def daily_coin_exchange_menu():
         time.sleep(2)
         return
 
+    # Bắt buộc: IP phải có user trên Supabase (chưa có → tạo)
+    bound = ensure_user_for_current_ip(force_prompt=True)
+    if not bound:
+        safe_console_print("[red]❌ IP này chưa có user trên Supabase. Hãy tạo user trước.[/red]")
+        time.sleep(2)
+        return
+    # User HTOOL xu phải khớp IP-bound user (không dùng ID game bừa)
+    if str(USER_ID) != str(bound):
+        # Vẫn cho nhận xu theo ID game nếu IP đã tạo đúng user = USER_ID;
+        # nếu IP gắn user khác → chặn
+        has, uid_ip, _, msg = check_ip_user_on_supabase()
+        if has and uid_ip and str(uid_ip) != str(USER_ID):
+            safe_console_print(
+                f"[red]❌ IP đã gắn user Supabase {uid_ip}, "
+                f"không dùng account game {USER_ID} cho hệ xu.[/red]"
+            )
+            time.sleep(2.5)
+            return
+
     while True:
         console.clear()
         balance = get_user_balance_secure(USER_ID)
@@ -1833,12 +2709,12 @@ def daily_coin_exchange_menu():
                 ("Số dư: ", "bold white"),
                 (f"{balance.get('coins', 0):.2f} xu\n", f"bold {HTOOL_COLORS['emerald']}"),
                 ("🎁 Xu hằng ngày: ", "bold white"),
-                (f"{DAILY_COIN_REWARD} xu/ngày\n", f"bold {HTOOL_COLORS['neon_blue']}"),
+                (f"{DAILY_COIN_REWARD} xu/ngày (không dùng → reset 0 ngày mai)\n", f"bold {HTOOL_COLORS['neon_blue']}"),
                 ("🔑 Đổi key: ", "bold white"),
                 ("5 xu → KEY FREE 13 GIỜ", f"bold {HTOOL_COLORS['neon_pink']}"),
             ),
             border_style=HTOOL_COLORS["gold"],
-            box=box.DOUBLE
+            box=box.ROUNDED
         ))
         console.print()
         console.print(f"[1] 🎁 Nhận {DAILY_COIN_REWARD} xu hôm nay "
@@ -1877,8 +2753,8 @@ def daily_coin_exchange_menu():
                             ("🌐 Supabase: Đã tạo & kích hoạt\n", "bold green"),
                             ("💡 Nhập key này ở menu Xác thực để dùng tool.", "dim"),
                         ),
-                        border_style="green",
-                        box=box.HEAVY
+                        border_style=HTOOL_COLORS["emerald"],
+                        box=box.ROUNDED
                     ))
                 else:
                     safe_console_print(f"[red]❌ {msg}[/red]")
@@ -2201,47 +3077,26 @@ def verify_and_repair_all_data():
 # ================== MENU ĐÀO XU ==================
 
 def show_mining_menu():
-    """Hiển thị menu đào xu"""
     console.clear()
-    header = Panel(Align.center(Text.assemble(
-        (f"⛏️ ", f"bold {HTOOL_COLORS['gold']}"),
-        ("HỆ THỐNG ĐÀO XU", f"bold {HTOOL_COLORS['neon_blue']}"),
-        (f" ⛏️", f"bold {HTOOL_COLORS['gold']}")
-    )), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE)
-    console.print(header)
+    console.print(Align.center(Text("HTOOL  /  NOVA  •  COIN ENGINE", style=f"bold {HTOOL_COLORS['sapphire']}")))
+    console.print(Rule(style=HTOOL_COLORS["sky"]))
+    rate = MINING_RATE
+    stats = Table.grid(expand=True,padding=(0,3))
+    stats.add_column(); stats.add_column(); stats.add_column(); stats.add_column()
+    stats.add_row(
+        Text("RATE",style=HTOOL_COLORS["muted"]), Text(f"{rate:.4f} /s",style=f"bold {HTOOL_COLORS['emerald']}"),
+        Text("1 HOUR",style=HTOOL_COLORS["muted"]), Text(f"{rate*3600:.1f} xu",style=f"bold {HTOOL_COLORS['gold']}")
+    )
+    stats.add_row(
+        Text("1 DAY",style=HTOOL_COLORS["muted"]), Text(f"{rate*86400:.1f} xu",style=f"bold {HTOOL_COLORS['gold']}"),
+        Text("KEY",style=HTOOL_COLORS["muted"]), Text("5 xu → FREE 13H",style=f"bold {HTOOL_COLORS['neon_pink']}")
+    )
+    console.print(Panel(stats,border_style=HTOOL_COLORS["emerald"],box=box.MINIMAL,padding=(1,2)))
+    menu = ["1  START MINING","2  STOP MINING","3  BALANCE","4  BUY KEY","5  MY KEYS","6  STATISTICS","7  DATA SECURITY","8  DAILY / FREE KEY","q  BACK"]
+    for item in menu: console.print(f"  {item}")
     console.print()
-    
-    info = Panel(Text.assemble(
-        ("📊 TỐC ĐỘ ĐÀO: ", "bold white"),
-        (f"10 giây = 0.1 xu\n", f"bold {HTOOL_COLORS['emerald']}"),
-        ("⏱️ 1 PHÚT = ", "bold white"),
-        (f"{MINING_RATE * 60:.2f} xu\n", f"bold {HTOOL_COLORS['gold']}"),
-        ("⏱️ 1 GIỜ = ", "bold white"),
-        (f"{MINING_RATE * 3600:.1f} xu\n", f"bold {HTOOL_COLORS['gold']}"),
-        ("⏱️ 1 NGÀY = ", "bold white"),
-        (f"{MINING_RATE * 86400:.1f} xu (MAX {864:.0f} xu)\n", f"bold {HTOOL_COLORS['gold']}"),
-        ("💡 KEY 24H = ", "bold white"),
-        (f"5 xu (50 giây đào)", f"bold {HTOOL_COLORS['neon_pink']}"),
-        ("\n🔒 ", "bold green"),
-        ("Dữ liệu được mã hóa và bảo vệ", "bold green")
-    ), border_style=HTOOL_COLORS["sapphire"], box=box.ROUNDED)
-    console.print(info)
-    console.print()
-    
-    console.print("[bold]📌 CHỌN CHỨC NĂNG:[/bold]")
-    console.print("[1] ⛏️ Bắt đầu đào xu")
-    console.print("[2] ⏹️ Dừng đào xu")
-    console.print("[3] 💰 Xem số dư")
-    console.print("[4] 🛒 Mua key bằng xu")
-    console.print("[8] 🎁 Xu hằng ngày / Đổi KEY FREE 13 GIỜ")
-    console.print("[5] 🔑 Xem key của tôi")
-    console.print("[6] 📊 Thống kê")
-    console.print("[7] 🔒 Bảo mật dữ liệu")
-    console.print("[q] 🔙 Quay lại")
-    console.print()
-    
-    choice = Prompt.ask(f"[bold {HTOOL_COLORS['gold']}]>> Chọn[/bold {HTOOL_COLORS['gold']}]", choices=['1','2','3','4','5','6','7','8','q'], default='q')
-    return choice
+    return _ui_prompt("MINING").lower()
+
 
 def mining_menu():
     """Menu đào xu chính"""
@@ -2289,7 +3144,7 @@ def mining_menu():
                 (f"{stats['valid_keys']} key còn hiệu lực", f"bold {HTOOL_COLORS['neon_pink']}"),
                 ("\n🔒 ", "bold green"),
                 ("Dữ liệu đã được bảo vệ", "bold green")
-            ), border_style=HTOOL_COLORS["gold"], box=box.HEAVY)
+            ), border_style=HTOOL_COLORS["gold"], box=box.ROUNDED)
             console.print(panel)
             input("[dim]Nhấn Enter để tiếp tục...[/dim]")
         
@@ -2314,83 +3169,25 @@ def mining_menu():
 # ================== HIỂN THỊ KEY VÀ THỐNG KÊ ==================
 
 def show_key_shop_secure():
-    """Hiển thị cửa hàng key (có bảo mật)"""
-    console.clear()
-    header = Panel(Align.center(Text.assemble(
-        (f"🛒 ", f"bold {HTOOL_COLORS['gold']}"),
-        ("CỬA HÀNG KEY", f"bold {HTOOL_COLORS['neon_blue']}"),
-        (f" 🛒", f"bold {HTOOL_COLORS['gold']}")
-    )), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE)
-    console.print(header)
-    console.print()
-    
-    prices = load_key_shop()
-    stats = get_user_stats_secure(USER_ID)
-    
-    console.print(f"[bold]💰 Số dư hiện tại: {stats['coins']:.2f} xu[/bold]\n")
-    
-    table = Table(box=box.ROUNDED, border_style=HTOOL_COLORS["gold"])
-    table.add_column("STT", style=HTOOL_COLORS["gold"], width=6)
-    table.add_column("Loại Key", style=HTOOL_COLORS["neon_blue"])
-    table.add_column("Thời gian", style="white")
-    table.add_column("Giá (xu)", justify="right", style=HTOOL_COLORS["emerald"])
-    table.add_column("Thời gian đào", style="dim")
-    
-    key_names = {
-        "24h": "KEY 1 NGÀY",
-        "7d": "KEY 7 NGÀY",
-        "30d": "KEY 30 NGÀY",
-        "90d": "KEY 90 NGÀY",
-        "free_13h": "KEY FREE 13 GIỜ"
-    }
-    
-    durations = {
-        "24h": "24 giờ",
-        "7d": "7 ngày",
-        "30d": "30 ngày",
-        "90d": "90 ngày"
-    }
-    
-    mining_times = {
-        "24h": "50 giây",
-        "7d": "300 giây (5 phút)",
-        "30d": "1000 giây (16.7 phút)",
-        "90d": "2500 giây (41.7 phút)"
-    }
-    
-    key_list = list(prices.items())
-    for i, (key_type, price) in enumerate(key_list, 1):
-        table.add_row(
-            str(i), 
-            key_names.get(key_type, key_type), 
-            durations.get(key_type, ""), 
-            f"{price}",
-            mining_times.get(key_type, "")
-        )
-    
-    console.print(table)
-    console.print()
-    console.print("[bold]📌 Chọn key để mua:[/bold]")
-    console.print("[q] 🔙 Quay lại")
-    console.print()
-    
-    choice = Prompt.ask(f"[bold {HTOOL_COLORS['gold']}]>> Chọn[/bold {HTOOL_COLORS['gold']}]", default='q')
-    
+    console.clear(); _ui_title("◇","KEY STORE","Key plans · pricing · mining equivalent")
+    prices=load_key_shop(); stats=get_user_stats_secure(USER_ID)
+    wallet=Table(show_header=False,box=None,padding=(0,1)); wallet.add_column(width=18); wallet.add_column()
+    wallet.add_row("SỐ DƯ",f"{stats['coins']:.2f} xu"); _ui_section("WALLET",wallet,HTOOL_COLORS["emerald"])
+    table=Table(show_header=True,box=box.ROUNDED,expand=True,border_style=HTOOL_COLORS["sky"],padding=(0,1))
+    table.add_column("#",width=5,justify="center"); table.add_column("PLAN"); table.add_column("DURATION"); table.add_column("PRICE",justify="right"); table.add_column("MINING EQUIVALENT")
+    names={"24h":"KEY 1 NGÀY","7d":"KEY 7 NGÀY","30d":"KEY 30 NGÀY","90d":"KEY 90 NGÀY","free_13h":"KEY FREE 13 GIỜ"}
+    dur={"24h":"24 giờ","7d":"7 ngày","30d":"30 ngày","90d":"90 ngày"}; mine={"24h":"50 giây","7d":"300 giây (5 phút)","30d":"1000 giây (16.7 phút)","90d":"2500 giây (41.7 phút)"}
+    key_list=list(prices.items())
+    for i,(kt,price) in enumerate(key_list,1): table.add_row(str(i),names.get(kt,kt),dur.get(kt,"13 giờ" if kt=="free_13h" else ""),f"{price} xu",mine.get(kt,"—"))
+    console.print(table); console.print(); choice=_ui_prompt("BUY / Q").lower()
     if choice.isdigit():
-        idx = int(choice) - 1
-        if 0 <= idx < len(key_list):
-            key_type, price = key_list[idx]
-            console.print(f"\n[bold yellow]Bạn muốn mua {key_names.get(key_type, key_type)} với giá {price} xu?[/bold yellow]")
-            console.print(f"[dim](Tương đương {mining_times.get(key_type, '')} đào)[/dim]")
-            confirm = Prompt.ask(f"[bold {HTOOL_COLORS['gold']}]Xác nhận? (y/n)[/bold {HTOOL_COLORS['gold']}]", choices=['y','n'], default='n')
-            if confirm == 'y':
-                success, msg = buy_key_secure(USER_ID, key_type)
-                if success:
-                    console.print(f"[green]✅ {msg}[/green]")
-                else:
-                    console.print(f"[red]❌ {msg}[/red]")
-                time.sleep(2)
-    
+        idx=int(choice)-1
+        if 0<=idx<len(key_list):
+            kt,price=key_list[idx]; name=names.get(kt,kt)
+            _ui_section("CONFIRM PURCHASE",Text(f"{name}\nGiá: {price} xu\n\nXác nhận giao dịch?",style=HTOOL_COLORS["platinum"]),HTOOL_COLORS["gold"])
+            if Prompt.ask(f"[bold {HTOOL_COLORS['sapphire']}]  CONFIRM  ›[/]",choices=["y","n"],default="n")=="y":
+                success,msg=buy_key_secure(USER_ID,kt); color=HTOOL_COLORS["emerald"] if success else HTOOL_COLORS["ruby"]
+                _ui_section("TRANSACTION",Text(("✓ " if success else "✕ ")+msg,style=f"bold {color}"),color); time.sleep(2)
     console.clear()
 
 def show_my_keys_secure():
@@ -2400,7 +3197,7 @@ def show_my_keys_secure():
         (f"🔑 ", f"bold {HTOOL_COLORS['gold']}"),
         ("KEY CỦA TÔI", f"bold {HTOOL_COLORS['neon_blue']}"),
         (f" 🔑", f"bold {HTOOL_COLORS['gold']}")
-    )), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE)
+    )), border_style=HTOOL_COLORS["gold"], box=box.ROUNDED)
     console.print(header)
     console.print()
     
@@ -2457,59 +3254,17 @@ def show_my_keys_secure():
     input("\n[dim]Nhấn Enter để tiếp tục...[/dim]")
 
 def show_mining_stats_secure():
-    """Hiển thị thống kê đào (có bảo mật)"""
-    console.clear()
-    header = Panel(Align.center(Text.assemble(
-        (f"📊 ", f"bold {HTOOL_COLORS['gold']}"),
-        ("THỐNG KÊ ĐÀO XU", f"bold {HTOOL_COLORS['neon_blue']}"),
-        (f" 📊", f"bold {HTOOL_COLORS['gold']}")
-    )), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE)
-    console.print(header)
-    console.print()
-    
-    stats = get_user_stats_secure(USER_ID)
-    mining_status = get_mining_status_secure(USER_ID)
-    
+    console.clear(); _ui_title("◌","MINING DASHBOARD","Live wallet & mining telemetry")
+    stats=get_user_stats_secure(USER_ID); state=get_mining_status_secure(USER_ID)
+    m=Table(show_header=False,box=None,padding=(0,1)); m.add_column(width=20,style=HTOOL_COLORS["muted"]); m.add_column(style=f"bold {HTOOL_COLORS['platinum']}")
     if stats["mining"]:
-        elapsed = mining_status["elapsed"]
-        earned = mining_status["earned"]
-        per_minute = MINING_RATE * 60
-        per_hour = MINING_RATE * 3600
-        per_day = MINING_RATE * 86400
-        
-        panel = Panel(Text.assemble(
-            ("⛏️ THÔNG TIN ĐÀO\n\n", f"bold {HTOOL_COLORS['neon_orange']}"),
-            (f"Trạng thái: ", "bold white"),
-            (f"🟢 Đang đào\n", f"bold {HTOOL_COLORS['emerald']}"),
-            (f"Thời gian đã đào: ", "bold white"),
-            (f"{elapsed:.0f} giây\n", f"bold {HTOOL_COLORS['gold']}"),
-            (f"Đã đào được: ", "bold white"),
-            (f"{earned:.2f} xu\n", f"bold {HTOOL_COLORS['gold']}"),
-            (f"Tốc độ: ", "bold white"),
-            (f"10 giây = 0.1 xu\n", f"bold {HTOOL_COLORS['neon_pink']}"),
-            (f"📈 Dự đoán: ", "bold white"),
-            (f"{per_minute:.2f} xu/phút | {per_hour:.1f} xu/giờ | {per_day:.1f} xu/ngày", f"bold {HTOOL_COLORS['emerald']}"),
-            ("\n🔒 ", "bold green"),
-            ("Dữ liệu đã được mã hóa và bảo vệ", "bold green")
-        ), border_style=HTOOL_COLORS["gold"], box=box.HEAVY)
-        console.print(panel)
+        m.add_row("STATUS","● MINING"); m.add_row("ELAPSED",f"{state['elapsed']:.0f} giây"); m.add_row("EARNED",f"{state['earned']:.2f} xu")
+        m.add_row("RATE / MIN",f"{MINING_RATE*60:.2f} xu"); m.add_row("RATE / HOUR",f"{MINING_RATE*3600:.1f} xu"); m.add_row("RATE / DAY",f"{MINING_RATE*86400:.1f} xu")
+        _ui_section("LIVE MINING",m,HTOOL_COLORS["emerald"])
     else:
-        panel = Panel(Text.assemble(
-            ("⛏️ BẠN ĐANG KHÔNG ĐÀO\n\n", f"bold {HTOOL_COLORS['dim']}"),
-            (f"Số dư hiện tại: ", "bold white"),
-            (f"{stats['coins']:.2f} xu\n", f"bold {HTOOL_COLORS['emerald']}"),
-            (f"Tổng đã đào: ", "bold white"),
-            (f"{stats['total_mined']:.2f} xu\n", f"bold {HTOOL_COLORS['gold']}"),
-            (f"Key còn hiệu lực: ", "bold white"),
-            (f"{stats['valid_keys']} key", f"bold {HTOOL_COLORS['neon_pink']}"),
-            ("\n🔒 ", "bold green"),
-            ("Dữ liệu đã được mã hóa và bảo vệ", "bold green")
-        ), border_style=HTOOL_COLORS["gold"], box=box.HEAVY)
-        console.print(panel)
-    
-    input("\n[dim]Nhấn Enter để tiếp tục...[/dim]")
-
-# ================== BẢO MẬT DỮ LIỆU ==================
+        m.add_row("STATUS","○ IDLE"); m.add_row("BALANCE",f"{stats['coins']:.2f} xu"); m.add_row("TOTAL MINED",f"{stats['total_mined']:.2f} xu"); m.add_row("VALID KEYS",f"{stats['valid_keys']} key")
+        _ui_section("MINING SUMMARY",m,HTOOL_COLORS["sky"])
+    console.print(Align.center(Text("🔒 Protected data  •  Press Enter to return",style=HTOOL_COLORS["muted"]))); input()
 
 def show_data_security_status():
     """Hiển thị trạng thái bảo mật dữ liệu"""
@@ -2518,7 +3273,7 @@ def show_data_security_status():
         (f"🔒 ", f"bold {HTOOL_COLORS['gold']}"),
         ("BẢO MẬT DỮ LIỆU", f"bold {HTOOL_COLORS['neon_blue']}"),
         (f" 🔒", f"bold {HTOOL_COLORS['gold']}")
-    )), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE)
+    )), border_style=HTOOL_COLORS["gold"], box=box.ROUNDED)
     console.print(header)
     console.print()
     
@@ -2551,7 +3306,7 @@ def show_data_security_status():
         (f"{'✅ 0' if corrupted == 0 else f'❌ {corrupted}'}\n", f"bold {HTOOL_COLORS['emerald'] if corrupted == 0 else HTOOL_COLORS['ruby']}"),
         (f"🛡️ Trạng thái: ", "bold white"),
         (f"{'✅ AN TOÀN' if corrupted == 0 else '⚠️ CẦN SỬA CHỮA'}", f"bold {HTOOL_COLORS['emerald'] if corrupted == 0 else HTOOL_COLORS['neon_orange']}")
-    ), border_style=HTOOL_COLORS["gold"], box=box.HEAVY)
+    ), border_style=HTOOL_COLORS["gold"], box=box.ROUNDED)
     console.print(panel)
     console.print()
     
@@ -2741,7 +3496,7 @@ SELECTION_MODES = {
     "TREND_ANALYSIS": "42. PHÂN TÍCH XU HƯỚNG (Mới)",
 }
 
-settings = {"algo": "ENSEMBLE"}
+settings = {"algo": "RANDOM"}
 STRATEGY_CONFIG_FILE = "strategy_htool.json"
 
 def get_available_ai_list(key_type: str = "free") -> List[str]:
@@ -2814,12 +3569,11 @@ def fetch_balances_3games(retries=3, timeout=8, params=None, uid=None, secret=No
             world = _parse_number(ua.get("WORLD"))
             usdt = _parse_number(ua.get("USDT"))
             if build is not None:
-                if last_balance_val is None:
+                if starting_balance is None:
                     starting_balance = build
-                    last_balance_val = build
-                else:
-                    last_balance_val = build
+                # Giống CDTD: P&L chỉ thay đổi theo số dư wallet sau khi có kết quả.
                 current_build = build
+                last_balance_val = current_build
                 if starting_balance is not None:
                     cumulative_profit = current_build - starting_balance
             if usdt is not None:
@@ -2835,24 +3589,26 @@ def fetch_balances_3games(retries=3, timeout=8, params=None, uid=None, secret=No
 def api_headers() -> Dict[str, str]:
     return {"content-type": "application/json", "user-agent": "Mozilla/5.0", "user-id": str(USER_ID) if USER_ID else "", "user-secret-key": SECRET_KEY if SECRET_KEY else ""}
 
+BET_API_URL = "https://api.escapemaster.net/escape_game/bet"
+
 def place_bet_http(issue: int, room_id: int, amount: float) -> dict:
-    BET_API_URL = "https://api.escapemaster.net/escape_game/bet"
-    payload = {"asset_type": "BUILD", "user_id": USER_ID, "room_id": int(room_id), "bet_amount": float(amount)}
     try:
-        if _secure_tool and _secure_tool.is_stealth:
-            response = _secure_tool.make_secure_request(BET_API_URL, method='POST', json=payload, timeout=8)
-            if response:
-                try:
-                    return response.json()
-                except:
-                    return {"raw": response.text, "http_status": response.status_code}
-            return {"error": "Request failed"}
-        else:
-            r = requests.post(BET_API_URL, headers=api_headers(), json=payload, timeout=8)
-            try:
-                return r.json()
-            except Exception:
-                return {"raw": r.text, "http_status": r.status_code}
+        payload = {
+            "asset_type": "BUILD",
+            "user_id": USER_ID,
+            "room_id": int(room_id),
+            "bet_amount": float(amount),
+        }
+        response = requests.post(
+            BET_API_URL,
+            headers=api_headers(),
+            json=payload,
+            timeout=8,
+        )
+        try:
+            return response.json()
+        except Exception:
+            return {"raw": response.text, "http_status": response.status_code}
     except Exception as e:
         return {"error": str(e)}
 
@@ -2862,14 +3618,31 @@ def record_bet(issue: int, room_id: int, amount: float, resp: dict, algo_used: O
     bet_history.append(rec)
     return rec
 
+def refresh_balance_after_bet(amount: float) -> None:
+    """Refresh nhẹ sau khi cược nhưng không trừ tạm P&L."""
+    try:
+        time.sleep(0.6)
+        fetch_balances_3games(retries=1, timeout=5)
+    except Exception:
+        pass
+
 def place_bet_async(issue: int, room_id: int, amount: float, algo_used: Optional[str] = None):
     def worker():
         safe_console_print(f"[cyan]Đang đặt {amount} BUILD -> PHÒNG_{room_id} (v{issue}) — Thuật toán: {algo_used}[/]")
         time.sleep(random.uniform(0.05, 0.45))
         res = place_bet_http(issue, room_id, amount)
         rec = record_bet(issue, room_id, amount, res, algo_used=algo_used)
-        if isinstance(res, dict) and (res.get("msg") == "ok" or res.get("code") == 0 or res.get("status") in ("ok", 1)):
+        if isinstance(res, dict) and (
+            res.get("msg") == "ok"
+            or res.get("code") == 0
+            or res.get("status") in ("ok", 1)
+        ):
             bet_sent_for_issue.add(issue)
+            threading.Thread(
+                target=refresh_balance_after_bet,
+                args=(float(amount),),
+                daemon=True,
+            ).start()
             safe_console_print(f"[green]✅ Đặt thành công {amount} BUILD vào PHÒNG_{room_id} (v{issue}).[/]")
         else:
             safe_console_print(f"[red]❌ Đặt lỗi v{issue}: {res}[/]")
@@ -3797,12 +4570,12 @@ def on_message(ws, message):
                                 max_win_streak = win_streak
                         else:
                             rec["result"] = "Thua"
+                            lose_streak += 1
                             try:
                                 if current_bet is not None:
                                     current_bet = calculate_smart_bet(base_bet, multiplier, lose_streak, current_build or 0)
                             except Exception:
                                 current_bet = base_bet
-                            lose_streak += 1
                             win_streak = 0
                             if lose_streak > max_lose_streak:
                                 max_lose_streak = lose_streak
@@ -4027,11 +4800,26 @@ CDTD_ALGORITHMS = {
     "META": "42. META LEARNING",
 }
 
-cdtd_settings = {"algo": "ENSEMBLE"}
+# KEY FREE CDTD: chỉ 10 AI
+CDTD_FREE_AI_LIST = [
+    "RANDOM", "CHAIN_WIN", "CHAIN_LOSE", "HOT_TRACK", "COLD_TRACK",
+    "BALANCE", "PATTERN_3", "PROBABILITY", "FOLLOW_WIN", "SMART",
+]
+
+
+def get_available_cdtd_ai_list(key_type: str = "free") -> List[str]:
+    """CDTD: FREE = 10 AI, VIP = full 42."""
+    if key_type == "vip":
+        return list(CDTD_ALGORITHMS.keys())
+    return list(CDTD_FREE_AI_LIST)
+
+
+cdtd_settings = {"algo": "RANDOM"}
 cdtd_coin = "BUILD"
 cdtd_base_bet = 1.0
 cdtd_multiplier = 2.0
 cdtd_current_bet = 1.0
+cdtd_num_athletes = 1  # Số nhân vật đặt cược mỗi ván (1–5)
 cdtd_win_streak = 0
 cdtd_lose_streak = 0
 cdtd_max_win_streak = 0
@@ -4040,7 +4828,8 @@ cdtd_stats = {'win': 0, 'lose': 0, 'asset_0': 0}
 cdtd_bet_history = deque(maxlen=50)
 cdtd_stop_flag = False
 cdtd_issue_id = None
-cdtd_predicted_nv = None
+cdtd_predicted_nv = None       # NV chính (tương thích UI cũ)
+cdtd_predicted_nvs = []        # Danh sách NV đã chọn (multi-bet)
 cdtd_ui_state = "WAITING"
 cdtd_analysis_start_ts = None
 cdtd_analysis_duration = 25.0
@@ -4194,7 +4983,12 @@ def build_cdtd_telegram_message(issue_id, killed_nv, bet_nv, bet_amount, result,
 # ================== CDTD AI FUNCTIONS ==================
 
 def cdtd_execute_ai(mode: str, data_top10, data_top100) -> int:
+    global _key_type
     mode = mode.upper()
+    # Khóa AI theo loại key
+    allowed = get_available_cdtd_ai_list(_key_type)
+    if mode not in allowed:
+        mode = "RANDOM"
     candidates = list(range(1, 7))
     
     if mode == "RANDOM":
@@ -4307,8 +5101,67 @@ def cdtd_execute_ai(mode: str, data_top10, data_top100) -> int:
     
     return random.choice(candidates)
 
+
+def cdtd_score_athletes(data_top10, data_top100) -> Dict[int, float]:
+    """Tính điểm từng NV để xếp hạng khi chọn nhiều nhân vật."""
+    scores = {i: 0.0 for i in range(1, 7)}
+    if data_top100 and len(data_top100) > 1 and data_top100[1]:
+        win_counts = data_top100[1]
+        total = sum(win_counts) or 1
+        for i, w in enumerate(win_counts):
+            scores[i + 1] += (w / total) * 0.4
+    if data_top10 and len(data_top10) > 1 and data_top10[1]:
+        recent = data_top10[1][-5:] if len(data_top10[1]) >= 5 else data_top10[1]
+        counts = Counter(recent)
+        for nv, c in counts.items():
+            try:
+                scores[int(nv)] += c * 0.25
+            except (TypeError, ValueError):
+                pass
+        try:
+            last = int(data_top10[1][-1])
+            scores[last] -= 0.15  # hơi tránh NV vừa thắng
+        except (TypeError, ValueError, IndexError):
+            pass
+    for i in range(1, 7):
+        scores[i] += random.uniform(0, 0.05)
+    return scores
+
+
+def cdtd_execute_ai_multi(mode: str, data_top10, data_top100, n: int = 1) -> List[int]:
+    """
+    Chọn n nhân vật (1–5) để đặt cược.
+    Ưu tiên NV do AI chính chọn, sau đó bổ sung theo điểm xếp hạng.
+    """
+    n = max(1, min(5, int(n or 1)))
+    primary = cdtd_execute_ai(mode, data_top10, data_top100)
+    try:
+        primary = int(primary)
+    except (TypeError, ValueError):
+        primary = random.randint(1, 6)
+
+    if n == 1:
+        return [primary]
+
+    scores = cdtd_score_athletes(data_top10, data_top100)
+    # NV chính luôn đứng đầu danh sách
+    ranked = sorted(scores.keys(), key=lambda x: (0 if x == primary else 1, -scores[x]))
+    chosen = []
+    for nv in ranked:
+        if nv not in chosen:
+            chosen.append(nv)
+        if len(chosen) >= n:
+            break
+    while len(chosen) < n:
+        r = random.randint(1, 6)
+        if r not in chosen:
+            chosen.append(r)
+    return chosen[:n]
+
+
 def cdtd_game_loop():
-    global cdtd_issue_id, cdtd_previous_issue, cdtd_last_winner, cdtd_predicted_nv, cdtd_ui_state, cdtd_analysis_start_ts
+    global cdtd_issue_id, cdtd_previous_issue, cdtd_last_winner, cdtd_predicted_nv, cdtd_predicted_nvs
+    global cdtd_ui_state, cdtd_analysis_start_ts
     global cdtd_current_bet, cdtd_win_streak, cdtd_lose_streak, cdtd_max_win_streak, cdtd_max_lose_streak, cdtd_stop_flag
     global cdtd_stats, cdtd_pause_remaining, cdtd_skip_next, cdtd_rounds_placed, cdtd_bet_placed_this_round, cdtd_checked_result
     
@@ -4317,6 +5170,7 @@ def cdtd_game_loop():
     cdtd_previous_issue = None
     cdtd_last_winner = None
     cdtd_predicted_nv = None
+    cdtd_predicted_nvs = []
     cdtd_ui_state = "WAITING"
     cdtd_analysis_start_ts = None
     cdtd_win_streak = 0
@@ -4343,7 +5197,8 @@ def cdtd_game_loop():
                 current_issue = data_top10[0][0] if data_top10[0] else None
                 
                 if current_issue and current_issue != cdtd_previous_issue:
-                    if cdtd_previous_issue is not None and cdtd_predicted_nv is not None and not cdtd_checked_result:
+                    has_prediction = (cdtd_predicted_nv is not None) or (cdtd_predicted_nvs)
+                    if cdtd_previous_issue is not None and has_prediction and not cdtd_checked_result:
                         try:
                             winner = int(data_top10[1][0]) if data_top10 and len(data_top10) > 1 and data_top10[1] else None
                             if winner is not None:
@@ -4351,36 +5206,45 @@ def cdtd_game_loop():
                                 balance_before = user_asset_cdtd().get(cdtd_coin, 0)
                                 result_type = 'win'
                                 
-                                for b in cdtd_bet_history:
-                                    if b.get('result') == 'pending':
-                                        b['winner'] = winner
-                                        if b['chosen'] != winner:
-                                            b['result'] = 'win'
-                                            cdtd_win_streak += 1
-                                            cdtd_lose_streak = 0
-                                            cdtd_max_win_streak = max(cdtd_max_win_streak, cdtd_win_streak)
-                                            cdtd_current_bet = cdtd_base_bet
-                                            cdtd_stats['win'] += 1
-                                            result_type = 'win'
-                                        else:
-                                            b['result'] = 'lose'
-                                            cdtd_lose_streak += 1
-                                            cdtd_win_streak = 0
-                                            cdtd_max_lose_streak = max(cdtd_max_lose_streak, cdtd_lose_streak)
-                                            cdtd_current_bet *= cdtd_multiplier
-                                            cdtd_stats['lose'] += 1
-                                            result_type = 'lose'
-                                            if cdtd_pause_rounds > 0:
-                                                cdtd_pause_remaining = cdtd_pause_rounds
+                                # Cập nhật từng lệnh cược (multi: mỗi NV một dòng)
+                                pending_bets = [b for b in cdtd_bet_history if b.get('result') == 'pending']
+                                round_lost = False
+                                for b in pending_bets:
+                                    b['winner'] = winner
+                                    if b.get('chosen') != winner:
+                                        b['result'] = 'win'
+                                    else:
+                                        b['result'] = 'lose'
+                                        round_lost = True
+                                
+                                # Streak / martingale tính theo VÁN (không theo từng NV)
+                                if pending_bets:
+                                    if round_lost:
+                                        cdtd_lose_streak += 1
+                                        cdtd_win_streak = 0
+                                        cdtd_max_lose_streak = max(cdtd_max_lose_streak, cdtd_lose_streak)
+                                        cdtd_current_bet *= cdtd_multiplier
+                                        cdtd_stats['lose'] += 1
+                                        result_type = 'lose'
+                                        if cdtd_pause_rounds > 0:
+                                            cdtd_pause_remaining = cdtd_pause_rounds
+                                    else:
+                                        cdtd_win_streak += 1
+                                        cdtd_lose_streak = 0
+                                        cdtd_max_win_streak = max(cdtd_max_win_streak, cdtd_win_streak)
+                                        cdtd_current_bet = cdtd_base_bet
+                                        cdtd_stats['win'] += 1
+                                        result_type = 'win'
                                 
                                 time.sleep(1)
                                 balance_after = user_asset_cdtd().get(cdtd_coin, 0)
                                 pnl_van = balance_after - balance_before
                                 total_pnl = balance_after - cdtd_stats['asset_0']
                                 
-                                if TELEGRAM_ENABLED and TELEGRAM_CHAT_ID and cdtd_bet_history:
+                                if TELEGRAM_ENABLED and TELEGRAM_CHAT_ID and pending_bets:
                                     bet_nv = cdtd_predicted_nv
-                                    bet_amount = cdtd_bet_history[-1].get('amount', 0) if cdtd_bet_history else cdtd_base_bet
+                                    # Tổng tiền cược cả ván (multi)
+                                    bet_amount = sum(float(b.get('amount', 0) or 0) for b in pending_bets)
                                     telegram_msg = build_cdtd_telegram_message(
                                         cdtd_previous_issue, winner, bet_nv, bet_amount,
                                         result_type, pnl_van, total_pnl,
@@ -4400,6 +5264,7 @@ def cdtd_game_loop():
                     cdtd_previous_issue = current_issue
                     cdtd_issue_id = current_issue
                     cdtd_predicted_nv = None
+                    cdtd_predicted_nvs = []
                     cdtd_bet_placed_this_round = False
                     cdtd_checked_result = False
                     cdtd_analysis_start_ts = time.time()
@@ -4411,9 +5276,11 @@ def cdtd_game_loop():
                     if elapsed >= cdtd_analysis_duration - 8 and not cdtd_bet_placed_this_round:
                         mode = cdtd_settings.get("algo", "ENSEMBLE")
                         data_top100 = top_100_cdtd()
-                        chosen = cdtd_execute_ai(mode, data_top10, data_top100)
+                        n_pick = max(1, min(5, int(cdtd_num_athletes or 1)))
+                        chosen_list = cdtd_execute_ai_multi(mode, data_top10, data_top100, n_pick)
                         
-                        cdtd_predicted_nv = chosen
+                        cdtd_predicted_nvs = list(chosen_list)
+                        cdtd_predicted_nv = chosen_list[0] if chosen_list else None
                         cdtd_ui_state = "PREDICTED"
                         live.update(cdtd_generate_layout())
                         
@@ -4425,30 +5292,42 @@ def cdtd_game_loop():
                             cdtd_skip_next = False
                             should_bet = False
                         
-                        if should_bet and cdtd_issue_id is not None:
+                        if should_bet and cdtd_issue_id is not None and chosen_list:
                             next_issue = cdtd_issue_id + 1
                             bet_amount = cdtd_current_bet if cdtd_current_bet else cdtd_base_bet
                             asset = user_asset_cdtd()
-                            if bet_amount > asset.get(cdtd_coin, 0):
+                            total_need = bet_amount * len(chosen_list)
+                            if total_need > asset.get(cdtd_coin, 0):
                                 cdtd_current_bet = cdtd_base_bet
                                 bet_amount = cdtd_base_bet
+                                # Nếu vẫn không đủ cho multi → giảm số NV
+                                while len(chosen_list) > 1 and bet_amount * len(chosen_list) > asset.get(cdtd_coin, 0):
+                                    chosen_list = chosen_list[:-1]
+                                cdtd_predicted_nvs = list(chosen_list)
+                                cdtd_predicted_nv = chosen_list[0] if chosen_list else None
                             
-                            success, msg = bet_cdtd(next_issue, chosen, bet_amount)
-                            if success:
-                                cdtd_bet_history.append({
-                                    'issue': next_issue,
-                                    'chosen': chosen,
-                                    'amount': bet_amount,
-                                    'result': 'pending',
-                                    'algo': mode
-                                })
+                            any_ok = False
+                            for nv in chosen_list:
+                                success, msg = bet_cdtd(next_issue, nv, bet_amount)
+                                if success:
+                                    any_ok = True
+                                    cdtd_bet_history.append({
+                                        'issue': next_issue,
+                                        'chosen': nv,
+                                        'amount': bet_amount,
+                                        'result': 'pending',
+                                        'algo': mode,
+                                        'multi': len(chosen_list),
+                                    })
+                                else:
+                                    safe_console_print(f"[red]❌ Đặt cược NV {nv} thất bại: {msg}[/red]")
+                            
+                            if any_ok:
                                 cdtd_rounds_placed += 1
                                 cdtd_bet_placed_this_round = True
                                 if cdtd_bet_rounds_before_skip > 0 and cdtd_rounds_placed >= cdtd_bet_rounds_before_skip:
                                     cdtd_skip_next = True
                                     cdtd_rounds_placed = 0
-                            else:
-                                safe_console_print(f"[red]❌ Đặt cược thất bại: {msg}[/red]")
                         
                         live.update(cdtd_generate_layout())
                     
@@ -4468,296 +5347,280 @@ def cdtd_game_loop():
                 time.sleep(3)
                 # ================== GIAO DIỆN CDTD ==================
 
+
 def build_cdtd_header():
-    asset = user_asset_cdtd()
-    info_table = Table(box=None, show_header=False, pad_edge=False, expand=True)
-    info_table.add_column(style=f"bold {HTOOL_COLORS['gold']}", no_wrap=True, justify="right", width=18)
-    info_table.add_column(style="white")
-    info_table.add_row(f"{ICONS['user']} USER:", f"[bold {HTOOL_COLORS['platinum']}]{cdtd_headers.get('user-id', 'N/A')}[/]")
-    info_table.add_row(f"{ICONS['money']} BALANCE:", f"[bold {HTOOL_COLORS['emerald']}]{asset.get(cdtd_coin, 0):.4f}[/] {cdtd_coin}")
-    pnl = asset.get(cdtd_coin, 0) - cdtd_stats['asset_0']
-    info_table.add_row(f"{ICONS['chart']} P&L:", f"[{HTOOL_COLORS['emerald'] if pnl >= 0 else HTOOL_COLORS['ruby']}]{pnl:+.4f} {cdtd_coin}[/]")
-    streak_text = Text.assemble(("🔥 ", f"bold {HTOOL_COLORS['neon_orange']}"), (f"{cdtd_win_streak}", f"bold {HTOOL_COLORS['emerald']}"), (" | ", "dim"), ("💀 ", f"bold {HTOOL_COLORS['ruby']}"), (f"{cdtd_lose_streak}", f"bold {HTOOL_COLORS['ruby']}"))
-    info_table.add_row("📊 STREAK:", streak_text)
-    info_table.add_row(f"{ICONS['key']} KEY:", f"[bold {HTOOL_COLORS['gold'] if _key_type == 'vip' else 'white'}]{_key_type.upper()}[/]")
-    info_table.add_row(f"{ICONS['brain']} AI:", f"[bold {HTOOL_COLORS['neon_pink']}]{CDTD_ALGORITHMS.get(cdtd_settings.get('algo', 'RANDOM'), 'N/A')}[/]")
-    info_table.add_row(f"{ICONS['clock']} TIME:", f"[{HTOOL_COLORS['sapphire']}]{datetime.now(tz).strftime('%H:%M:%S')}[/]")
-    info_table.add_row(f"{ICONS['target']} ISSUE:", f"[bold {HTOOL_COLORS['gold']}]{cdtd_issue_id or 'Waiting...'}[/]")
-    info_table.add_row(f"{ICONS['bell']} TG:", f"[{'green' if TELEGRAM_ENABLED else 'dim'}] {'BẬT' if TELEGRAM_ENABLED else 'TẮT'}[/]")
-    info_table.add_row(f"🌐 IP:", f"[dim]{_ip_info.get('public_ip', 'N/A')}[/dim]")
-    info_table.add_row(f"🛡️ Anti-Detection:", f"[{'green' if _secure_mode else 'dim'}] {'ON' if _secure_mode else 'OFF'}[/]")
-    return Panel(info_table, border_style=HTOOL_COLORS["gold"], box=box.HEAVY, padding=(1, 2))
+    """CDTD / NOVA: status cockpit ngang, tối ưu cho terminal rộng và điện thoại."""
+    asset = user_asset_cdtd().get(cdtd_coin, 0)
+    pnl = asset - cdtd_stats["asset_0"]
+    pnl_color = HTOOL_COLORS["emerald"] if pnl >= 0 else HTOOL_COLORS["ruby"]
+    title = Text()
+    title.append("CDTD", style=f"bold {HTOOL_COLORS['sapphire']}")
+    title.append("  /  ", style=HTOOL_COLORS["muted"])
+    title.append("RACE COMMAND", style=f"bold {HTOOL_COLORS['platinum']}")
+    title.append("   LIVE", style=f"bold {HTOOL_COLORS['emerald']}")
+    cells = [
+        ("USER", str(USER_ID or "N/A"), HTOOL_COLORS["sapphire"]),
+        ("BALANCE", f"{asset:,.4f} {cdtd_coin}", HTOOL_COLORS["gold"]),
+        ("P&L", f"{pnl:+,.4f}", pnl_color),
+        ("STREAK", f"{cdtd_win_streak}W / {cdtd_lose_streak}L", HTOOL_COLORS["neon_pink"]),
+        ("KEY", str(_key_type).upper(), HTOOL_COLORS["sky"]),
+        ("ISSUE", str(cdtd_issue_id or "—"), HTOOL_COLORS["muted"]),
+    ]
+    g = Table.grid(expand=True, padding=(0, 1))
+    for _ in cells:
+        g.add_column(ratio=1)
+    g.add_row(*[
+        Text.from_markup(f"[bold {c}]{label}[/]\n[bold white]{value}[/]")
+        for label, value, c in cells
+    ])
+    return Group(
+        Align.center(title),
+        Rule(style=HTOOL_COLORS["sapphire"]),
+        Panel(g, border_style=HTOOL_COLORS["onyx"], box=box.SIMPLE, padding=(0,1)),
+    )
+
+
+
 
 def build_cdtd_racers():
     data_top100, data_top10 = top_100_cdtd(), top_10_cdtd()
-    racer_panels = []
+    pred_set = set(cdtd_predicted_nvs) if cdtd_predicted_nvs else ({cdtd_predicted_nv} if cdtd_predicted_nv else set())
+    last = None
+    if data_top10 and len(data_top10) > 1 and data_top10[1]:
+        try:
+            last = int(data_top10[1][0])
+        except Exception:
+            pass
+
+    grid = Table.grid(expand=True, padding=(1, 1))
+    grid.add_column(ratio=1); grid.add_column(ratio=1); grid.add_column(ratio=1)
+    cards = []
     for i in range(1, 7):
         wins = data_top100[1][i-1] if data_top100 and len(data_top100) > 1 and data_top100[1] else 0
-        is_predicted = cdtd_predicted_nv == i
-        is_last_winner = False
-        if data_top10 and len(data_top10) > 1 and data_top10[1]:
-            try:
-                is_last_winner = int(data_top10[1][0]) == i
-            except:
-                pass
-        
-        if is_predicted:
-            border, title_style, bg, glow = f"bold {HTOOL_COLORS['emerald']}", f"bold {HTOOL_COLORS['emerald']}", "on #003300", "✨⭐"
-        elif is_last_winner:
-            border, title_style, bg, glow = HTOOL_COLORS["gold"], HTOOL_COLORS["gold"], "on #332200", "🏆"
+        if i in pred_set:
+            accent, tag = HTOOL_COLORS["emerald"], "TARGET"
+        elif i == last:
+            accent, tag = HTOOL_COLORS["gold"], "LAST WIN"
         else:
-            border, title_style, bg, glow = HTOOL_COLORS["onyx"], "white", "", ""
-        
-        content = Text.assemble(
-            ("\n", ""),
-            (f"{glow} {NV_ICONS[i]}\n", "default"),
-            (f"{NV[i]}\n", title_style),
-            (f"🏆 {wins} wins", "dim"),
-            ("\n", ""),
-            justify="center"
-        )
-        racer_panels.append(Panel(
-            Align.center(content, vertical="middle"),
-            title=f"[{title_style}]#{i}[/{title_style}]",
-            border_style=border,
-            box=box.HEAVY,
-            expand=True,
-            height=6,
-            style=bg
-        ))
+            accent, tag = HTOOL_COLORS["onyx"], "READY"
+        pct = min(100, wins)
+        body = Text()
+        body.append(f"{i:02d}  ", style=f"bold {accent}")
+        body.append(f"{NV_ICONS.get(i,'•')} {NV.get(i,'NV '+str(i))}\n", style="bold white")
+        body.append(f"{wins:>3} WINS   ", style=HTOOL_COLORS["muted"])
+        body.append(tag, style=f"bold {accent}")
+        body.append("\n")
+        body.append("━" * max(3, min(18, int(pct/6))), style=accent)
+        cards.append(Panel(body, border_style=accent, box=box.ROUNDED, padding=(0,1)))
+    for row in range(2):
+        grid.add_row(*cards[row*3:(row+1)*3])
     return Panel(
-        Columns(racer_panels, equal=True, expand=True),
-        title=f"[bold {HTOOL_COLORS['neon_orange']}]🏎️ CHẠY ĐUA TỐC ĐỘ 🏎️[/]",
-        box=box.HEAVY,
-        border_style=HTOOL_COLORS["neon_orange"],
-        expand=True
+        grid,
+        title=f"[bold {HTOOL_COLORS['sapphire']}]01  ATHLETE BOARD[/]",
+        subtitle="prediction target • last winner • readiness",
+        border_style=HTOOL_COLORS["sapphire"],
+        box=box.ROUNDED,
+        padding=(0,1),
     )
+
+
+
 
 def build_cdtd_mid():
+    body = Text()
     if cdtd_ui_state == "ANALYZING":
         elapsed = time.time() - (cdtd_analysis_start_ts or time.time())
-        progress = min(1.0, elapsed / cdtd_analysis_duration)
-        bar = "█" * int(30 * progress) + "░" * (30 - int(30 * progress))
-        content = Text.assemble(
-            ("\n🧠 ĐANG PHÂN TÍCH...\n\n", f"bold {HTOOL_COLORS['neon_blue']}"),
-            (f"[{HTOOL_COLORS['gold']}]{bar}[/]\n\n", ""),
-            (f"Tiến độ: {progress*100:.0f}%\n", HTOOL_COLORS['neon_pink']),
-            (f"⏱️ Còn {max(0, int(cdtd_analysis_duration - elapsed))}s\n", "dim"),
-            justify="center"
-        )
-        return Panel(content, border_style=HTOOL_COLORS["neon_blue"], box=box.HEAVY, expand=True)
-    
+        progress = min(1.0, elapsed / max(cdtd_analysis_duration, 0.1))
+        filled = int(30 * progress)
+        body.append("AI DECISION PIPELINE\n\n", style=f"bold {HTOOL_COLORS['sapphire']}")
+        body.append("[" + "■"*filled + "·"*(30-filled) + "]\n", style=f"bold {HTOOL_COLORS['neon_pink']}")
+        body.append(f"\n{progress*100:05.1f}%  ", style=f"bold {HTOOL_COLORS['gold']}")
+        body.append(f"ETA {max(0,int(cdtd_analysis_duration-elapsed))}s", style=HTOOL_COLORS["muted"])
+        accent, title = HTOOL_COLORS["sapphire"], "02  AI ANALYSIS"
     elif cdtd_ui_state == "PREDICTED":
         bet_amt = cdtd_current_bet or cdtd_base_bet
-        content = Text.assemble(
-            ("\n╔══════════════════════════════╗\n", HTOOL_COLORS["gold"]),
-            ("║  🎯 DỰ ĐOÁN CỦA BOT  🎯    ║\n", HTOOL_COLORS["gold"]),
-            ("║  ", HTOOL_COLORS["gold"]),
-            (f"{NV_ICONS.get(cdtd_predicted_nv, '🤖')} {NV.get(cdtd_predicted_nv, 'N/A'):^20}", f"bold {HTOOL_COLORS['emerald']}"),
-            ("  ║\n", HTOOL_COLORS["gold"]),
-            ("║  💰 Cược: ", HTOOL_COLORS["gold"]),
-            (f"{bet_amt:.2f} {cdtd_coin:<10}", f"bold {HTOOL_COLORS['gold']}"),
-            ("  ║\n", HTOOL_COLORS["gold"]),
-            ("╚══════════════════════════════╝\n", HTOOL_COLORS["gold"]),
-            (f"\n📈 Chuỗi thắng: {cdtd_win_streak}  📉 Chuỗi thua: {cdtd_lose_streak}\n", "white"),
-            justify="center"
-        )
-        return Panel(content, border_style=HTOOL_COLORS["emerald"], box=box.HEAVY, expand=True)
-    
+        nvs = cdtd_predicted_nvs if cdtd_predicted_nvs else ([cdtd_predicted_nv] if cdtd_predicted_nv else [])
+        names = "  •  ".join(f"{NV_ICONS.get(n,'•')} {NV.get(n,'NV'+str(n))}" for n in nvs) or "N/A"
+        total = bet_amt * max(1, len(nvs))
+        body.append("LOCKED PREDICTION\n\n", style=f"bold {HTOOL_COLORS['emerald']}")
+        body.append(names + "\n\n", style="bold white")
+        body.append(f"STAKE  {bet_amt:.2f} × {max(1,len(nvs))}\n", style=HTOOL_COLORS["muted"])
+        body.append(f"TOTAL  {total:.2f} {cdtd_coin}", style=f"bold {HTOOL_COLORS['gold']}")
+        accent, title = HTOOL_COLORS["emerald"], "02  TARGET LOCK"
     elif cdtd_ui_state == "RESULT":
         last_bet = cdtd_bet_history[-1] if cdtd_bet_history else None
-        if last_bet and last_bet.get('result') == 'win':
-            result_text, result_color, border_color = "🎉 CHIẾN THẮNG! 🎉", HTOOL_COLORS["emerald"], HTOOL_COLORS["emerald"]
-        elif last_bet and last_bet.get('result') == 'lose':
-            result_text, result_color, border_color = "💀 THUA CUỘC! 💀", HTOOL_COLORS["ruby"], HTOOL_COLORS["ruby"]
-        else:
-            result_text, result_color, border_color = "⏳ ĐANG CHỜ...", HTOOL_COLORS["gold"], HTOOL_COLORS["gold"]
-        
-        content = Text.assemble(
-            ("\n", ""),
-            (f"{result_text}\n\n", f"bold {result_color}"),
-            ("Người thắng: ", "white"),
-            (f"{NV_ICONS.get(cdtd_last_winner, '🏆')} {NV.get(cdtd_last_winner, 'N/A')}\n", f"bold {HTOOL_COLORS['gold']}"),
-            ("\n⏳ Đang chờ kỳ mới...", "dim"),
-            justify="center"
-        )
-        return Panel(content, border_style=border_color, box=box.HEAVY, expand=True)
-    
-    return Panel(
-        Align.center(Text("\n⏳ ĐANG CHỜ DỮ LIỆU...\n\n🔄 Đang kết nối...\n", justify="center")),
-        border_style=HTOOL_COLORS["gold"],
-        box=box.HEAVY,
-        expand=True
-    )
+        win = bool(last_bet and last_bet.get("result") == "win")
+        accent = HTOOL_COLORS["emerald"] if win else HTOOL_COLORS["ruby"] if last_bet else HTOOL_COLORS["gold"]
+        body.append("ROUND COMPLETE\n\n", style=f"bold {accent}")
+        body.append(f"{NV_ICONS.get(cdtd_last_winner,'•')} {NV.get(cdtd_last_winner,'N/A')}\n\n", style="bold white")
+        body.append("NEXT ROUND READY", style=HTOOL_COLORS["muted"])
+        title = "02  ROUND RESULT"
+    else:
+        accent, title = HTOOL_COLORS["gold"], "02  ENGINE STANDBY"
+        body.append("WAITING FOR RACE DATA\n\n", style=f"bold {accent}")
+        body.append("CONNECTING TO GAME ENGINE", style=HTOOL_COLORS["muted"])
+    return Panel(Align.center(body, vertical="middle"), title=f"[bold]{title}[/]", border_style=accent, box=box.ROUNDED, padding=(1,2))
+
+
+
 
 def build_cdtd_history():
-    t = Table(title=f"[bold {HTOOL_COLORS['gold']}]📜 LỊCH SỬ CƯỢC[/]", box=box.ROUNDED, expand=True, border_style=HTOOL_COLORS["onyx"])
-    t.add_column("Kỳ", style=HTOOL_COLORS["sapphire"], width=6)
-    t.add_column("Chọn", style=HTOOL_COLORS["neon_blue"])
-    t.add_column("Cược", justify="right", style=HTOOL_COLORS["gold"], width=10)
-    t.add_column("KQ")
-    
-    for b in list(cdtd_bet_history)[-10:]:
-        chosen = NV.get(b.get('chosen'), str(b.get('chosen', '-')))
-        amount = f"{b.get('amount', 0):.2f}"
-        if b.get('result') == 'win':
-            result_text = Text("✅ THẮNG", style=f"bold {HTOOL_COLORS['emerald']}")
-        elif b.get('result') == 'lose':
-            result_text = Text("❌ THUA", style=f"bold {HTOOL_COLORS['ruby']}")
-        else:
-            result_text = Text("⏳", style=HTOOL_COLORS["gold"])
-        t.add_row(str(b.get('issue', '-')), chosen, amount, result_text)
-    
-    return Panel(t, border_style=HTOOL_COLORS["sapphire"], box=box.HEAVY, expand=True)
+    t = Table(show_header=True, box=box.SIMPLE_HEAVY, expand=True, padding=(0,1))
+    t.add_column("ISSUE", style=HTOOL_COLORS["muted"], no_wrap=True)
+    t.add_column("TARGET")
+    t.add_column("STAKE", justify="right", style=HTOOL_COLORS["gold"])
+    t.add_column("RESULT", justify="right")
+    rows = list(cdtd_bet_history)[-6:]
+    if not rows:
+        t.add_row("—", "Chưa có", "0.00", Text("WAIT", style=HTOOL_COLORS["muted"]))
+    for b in rows:
+        res = b.get("result")
+        rc = HTOOL_COLORS["emerald"] if res == "win" else HTOOL_COLORS["ruby"] if res == "lose" else HTOOL_COLORS["gold"]
+        t.add_row(str(b.get("issue","-")), NV.get(b.get("chosen"), str(b.get("chosen","-"))),
+                  f"{b.get('amount',0):.2f}", Text(str(res or "WAIT").upper(), style=f"bold {rc}"))
+    return Panel(t, title="[bold]03  BET JOURNAL[/]", border_style=HTOOL_COLORS["onyx"], box=box.ROUNDED, padding=(0,1))
+
+
+
 
 def build_cdtd_stats():
-    data_top100 = top_100_cdtd()
-    t = Table(title=f"[bold {HTOOL_COLORS['neon_blue']}]📊 THỐNG KÊ 100 VÁN[/]", box=box.ROUNDED, expand=True, border_style=HTOOL_COLORS["neon_blue"])
-    t.add_column("NV", style=HTOOL_COLORS["gold"], width=4)
-    t.add_column("Tên", style="white")
-    t.add_column("Thắng", justify="right", style=HTOOL_COLORS["emerald"], width=8)
-    t.add_column("Tỷ lệ", justify="right", style=HTOOL_COLORS["neon_pink"], width=8)
-    
-    total_wins = sum(data_top100[1]) if data_top100 and len(data_top100) > 1 and data_top100[1] else 1
+    data = top_100_cdtd()
+    t = Table(show_header=True, box=box.SIMPLE, expand=True, padding=(0,1))
+    t.add_column("NO", width=3, style=HTOOL_COLORS["muted"])
+    t.add_column("ATHLETE")
+    t.add_column("WINS", justify="right", style=HTOOL_COLORS["emerald"])
+    t.add_column("RATE", justify="right", style=HTOOL_COLORS["neon_pink"])
+    vals = data[1] if data and len(data) > 1 and data[1] else [0]*6
+    total = max(1, sum(vals))
     for i in range(6):
-        wins = data_top100[1][i] if data_top100 and len(data_top100) > 1 and data_top100[1] else 0
-        t.add_row(
-            f"{NV_ICONS.get(i+1, '🏆')}",
-            NV.get(i+1, f'NV{i+1}'),
-            str(wins),
-            f"{wins/total_wins*100:.1f}%"
-        )
-    
-    summary = Table(box=box.ROUNDED, expand=True, border_style=HTOOL_COLORS["gold"])
-    summary.add_column("Chỉ số", style=HTOOL_COLORS["gold"])
-    summary.add_column("Giá trị", style="white")
-    summary.add_row("Tổng ván", str(cdtd_stats['win'] + cdtd_stats['lose']))
-    summary.add_row("Thắng", f"[green]{cdtd_stats['win']}[/]")
-    summary.add_row("Thua", f"[red]{cdtd_stats['lose']}[/]")
-    summary.add_row("Max thắng", str(cdtd_max_win_streak))
-    summary.add_row("Max thua", str(cdtd_max_lose_streak))
-    pnl = user_asset_cdtd().get(cdtd_coin, 0) - cdtd_stats['asset_0']
-    summary.add_row("P&L", f"[{'green' if pnl >= 0 else 'red'}]{pnl:+.4f} {cdtd_coin}[/]")
-    
+        wins = vals[i] if i < len(vals) else 0
+        t.add_row(str(i+1), f"{NV_ICONS.get(i+1,'•')} {NV.get(i+1,'NV'+str(i+1))}",
+                  str(wins), f"{wins/total*100:.1f}%")
+    pnl = user_asset_cdtd().get(cdtd_coin,0) - cdtd_stats["asset_0"]
+    summary = Text()
+    summary.append("SESSION\n", style=f"bold {HTOOL_COLORS['sapphire']}")
+    summary.append(f"ROUNDS   {cdtd_stats['win'] + cdtd_stats['lose']}\n")
+    summary.append(f"WINS     {cdtd_stats['win']}\n", style=HTOOL_COLORS["emerald"])
+    summary.append(f"LOSSES   {cdtd_stats['lose']}\n", style=HTOOL_COLORS["ruby"])
+    summary.append(f"MAX W    {cdtd_max_win_streak}\n")
+    summary.append(f"MAX L    {cdtd_max_lose_streak}\n")
+    summary.append(f"P&L      {pnl:+.4f} {cdtd_coin}", style=f"bold {HTOOL_COLORS['emerald'] if pnl>=0 else HTOOL_COLORS['ruby']}")
     return Panel(
-        Columns([t, summary], equal=True, expand=True),
-        border_style=HTOOL_COLORS["gold"],
-        box=box.HEAVY,
-        expand=True
+        Columns([Panel(t, border_style=HTOOL_COLORS["onyx"], box=box.SIMPLE), Panel(summary, border_style=HTOOL_COLORS["gold"], box=box.SIMPLE, padding=(1,2))], equal=True, expand=True),
+        title="[bold]04  PERFORMANCE MATRIX[/]",
+        border_style=HTOOL_COLORS["sky"], box=box.ROUNDED, padding=(0,1)
     )
+
+
+
 
 def build_cdtd_marquee():
-    messages = [
-        f"⚡ CDTD - 42 AI {ICONS['rocket']}",
-        f"🧠 {CDTD_ALGORITHMS.get(cdtd_settings.get('algo', 'RANDOM'), 'N/A')} {ICONS['robot']}",
-        f"💰 {cdtd_coin} | Cược: {cdtd_base_bet} | x{cdtd_multiplier}",
-        f"🎯 W:{cdtd_stats['win']} L:{cdtd_stats['lose']} {ICONS['chart']}",
-        f"⛏️ Mining: 10s = 0.1 xu",
-    ]
-    message = messages[int(time.time() / 5) % len(messages)]
-    full_text = " " * 20 + message + " " * 20
-    width = console.width or 80
-    display_text = (full_text * 3)[int(time.time() * 3) % len(full_text) : int(time.time() * 3) % len(full_text) + width]
-    return Panel(
-        Text(display_text, style=f"bold {HTOOL_COLORS['neon_blue']}", no_wrap=True),
-        box=box.ROUNDED,
-        border_style=HTOOL_COLORS["onyx"],
-        padding=0,
-        expand=True
-    )
+    text = Text()
+    text.append("ENGINE  ", style=f"bold {HTOOL_COLORS['muted']}")
+    text.append(CDTD_ALGORITHMS.get(cdtd_settings.get('algo','RANDOM'),'N/A'), style=f"bold {HTOOL_COLORS['sapphire']}")
+    text.append("   │   ", style=HTOOL_COLORS["onyx"])
+    text.append(f"BET {cdtd_base_bet} × {cdtd_num_athletes}", style=HTOOL_COLORS["gold"])
+    text.append("   │   ", style=HTOOL_COLORS["onyx"])
+    text.append(f"x{cdtd_multiplier}", style=HTOOL_COLORS["neon_pink"])
+    text.append("   │   ", style=HTOOL_COLORS["onyx"])
+    text.append(f"W {cdtd_stats['win']}  /  L {cdtd_stats['lose']}", style=HTOOL_COLORS["muted"])
+    return Panel(Align.center(text), border_style=HTOOL_COLORS["onyx"], box=box.SIMPLE, padding=(0,1))
+
+
+
 
 def cdtd_generate_layout():
-    main_grid = Table.grid(expand=True, pad_edge=False)
-    main_grid.add_column("main", ratio=55)
-    main_grid.add_column("side", ratio=45)
-    
-    right_grid = Table.grid(expand=True, pad_edge=False)
-    right_grid.add_row(build_cdtd_mid())
-    right_grid.add_row(build_cdtd_history())
-    
-    main_grid.add_row(build_cdtd_racers(), right_grid)
-    
+    """CDTD NOVA: bố cục 4 tầng, không còn dashboard cũ."""
     root = Table.grid(expand=True, pad_edge=False)
     root.add_row(build_cdtd_header())
     root.add_row(build_cdtd_marquee())
-    root.add_row(main_grid)
+
+    middle = Table.grid(expand=True, pad_edge=False)
+    middle.add_column(ratio=60)
+    middle.add_column(ratio=40)
+    middle.add_row(build_cdtd_racers(), build_cdtd_mid())
+    root.add_row(middle)
+
+    root.add_row(build_cdtd_history())
     root.add_row(build_cdtd_stats())
-    
     return root
 
+
 def cdtd_prompt_settings():
-    global cdtd_base_bet, cdtd_multiplier, cdtd_coin, cdtd_current_bet, cdtd_pause_rounds, cdtd_bet_rounds_before_skip, cdtd_settings
-    
+    global cdtd_base_bet, cdtd_multiplier, cdtd_coin, cdtd_current_bet, cdtd_pause_rounds
+    global cdtd_bet_rounds_before_skip, cdtd_settings, _key_type, cdtd_num_athletes
+
     console.clear()
-    header = Panel(
-        Align.center(Text.assemble(
-            (f"{ICONS['settings']} ", f"bold {HTOOL_COLORS['gold']}"),
-            ("CẤU HÌNH CHẠY ĐUA TỐC ĐỘ", f"bold {HTOOL_COLORS['neon_blue']}")
-        )),
-        border_style=HTOOL_COLORS["gold"],
-        box=box.DOUBLE
-    )
-    console.print(header)
+    brand = Text()
+    brand.append(" ▶▶ ", style=f"bold {HTOOL_COLORS['bg_deep']} on {HTOOL_COLORS['neon_blue']}")
+    brand.append("  CHẠY ĐUA TỐC ĐỘ  ", style=f"bold {HTOOL_COLORS['gold']}")
+    brand.append("  ·  RACE CONFIG  ", style=HTOOL_COLORS["muted"])
+    console.print(Align.center(brand))
+    console.print(Rule(f"[bold {HTOOL_COLORS['neon_blue']}]  ▶  BET ENGINE SETUP  [/]", style=HTOOL_COLORS["sapphire"]))
     console.print()
-    
+
+    console.print(Text.assemble(("▌ ", f"bold {HTOOL_COLORS['gold']}"), ("BET ENGINE", f"bold {HTOOL_COLORS['gold']}")))
     coin_choice = Prompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]💰 Chọn tiền: [1] USDT [2] BUILD [3] WORLD[/]\n   >>",
-        choices=['1', '2', '3'],
-        default='2'
+        f"  [{HTOOL_COLORS['muted']}]Currency[/{HTOOL_COLORS['muted']}] [bold {HTOOL_COLORS['gold']}]1[/]=USDT  [bold {HTOOL_COLORS['neon_blue']}]2[/]=BUILD  [bold {HTOOL_COLORS['neon_pink']}]3[/]=WORLD",
+        choices=["1","2","3"], default="2"
     )
-    cdtd_coin = {'1': 'USDT', '2': 'BUILD', '3': 'WORLD'}[coin_choice]
-    
-    cdtd_base_bet = FloatPrompt.ask(f"\n[bold {HTOOL_COLORS['gold']}]💵 Cược gốc ({cdtd_coin})[/]\n   >>", default=1.0)
-    cdtd_multiplier = FloatPrompt.ask(f"\n[bold {HTOOL_COLORS['gold']}]📈 Hệ số nhân[/]\n   >>", default=2.0)
+    cdtd_coin = {"1":"USDT","2":"BUILD","3":"WORLD"}[coin_choice]
+    cdtd_base_bet = FloatPrompt.ask(f"  Base bet ({cdtd_coin})", default=1.0)
+    cdtd_multiplier = FloatPrompt.ask("  Multiplier", default=2.0)
     cdtd_current_bet = cdtd_base_bet
-    cdtd_bet_rounds_before_skip = IntPrompt.ask(f"\n[bold {HTOOL_COLORS['gold']}]🛡️ Nghỉ 1 ván sau N ván (0=không)[/]\n   >>", default=0)
-    cdtd_pause_rounds = IntPrompt.ask(f"\n[bold {HTOOL_COLORS['gold']}]⏸️ Nghỉ N ván sau khi thua (0=không)[/]\n   >>", default=0)
-    
-    console.clear()
-    console.print(header)
-    
-    console.print(f"\n[bold {HTOOL_COLORS['neon_pink']}]🧠 Chọn AI (42 AI):[/]\n")
-    
-    algo_table = Table(box=box.ROUNDED, border_style=HTOOL_COLORS["neon_pink"])
-    algo_table.add_column("#", style=HTOOL_COLORS["gold"], width=4)
-    algo_table.add_column("Thuật toán", style=HTOOL_COLORS["neon_blue"])
-    algo_table.add_column("Mô tả", style="dim")
-    
-    for i, (key, label) in enumerate(CDTD_ALGORITHMS.items(), 1):
-        algo_table.add_row(str(i), label, "")
-    
-    console.print(algo_table)
+    cdtd_num_athletes = int(IntPrompt.ask("  Number of athletes [1-5]", choices=["1","2","3","4","5"], default=str(cdtd_num_athletes or 1)))
+    cdtd_bet_rounds_before_skip = IntPrompt.ask("  Skip after N rounds (0=off)", default=0)
+    cdtd_pause_rounds = IntPrompt.ask("  Pause N rounds after loss (0=off)", default=0)
+
+    available = get_available_cdtd_ai_list(_key_type)
     console.print()
-    
-    algo_choice = IntPrompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]>> Chọn số thứ tự (1-{len(CDTD_ALGORITHMS)})[/bold {HTOOL_COLORS['gold']}]",
-        choices=[str(i) for i in range(1, len(CDTD_ALGORITHMS) + 1)],
-        default=1
+    console.print(Rule(f"[bold {HTOOL_COLORS['sapphire']}]  ◉  AI ENGINE  ·  {len(available)} AVAILABLE  [/]", style=HTOOL_COLORS["accent_line"]))
+    t = Table(show_header=True, box=box.SIMPLE_HEAVY, expand=True, padding=(0,1))
+    t.add_column("#", width=4, style=HTOOL_COLORS["muted"])
+    t.add_column("ENGINE", style=f"bold {HTOOL_COLORS['platinum']}")
+    for i, k in enumerate(available, 1):
+        row_style = HTOOL_COLORS["sapphire"] if i % 2 == 0 else HTOOL_COLORS["neon_pink"]
+        t.add_row(Text(str(i), style=f"bold {row_style}"), CDTD_ALGORITHMS.get(k, k))
+    console.print(t)
+    idx = IntPrompt.ask(
+        f"  [bold {HTOOL_COLORS['gold']}]▶ Chọn engine[/bold {HTOOL_COLORS['gold']}]",
+        choices=[str(i) for i in range(1, len(available)+1)], default=1
     )
-    
-    cdtd_settings["algo"] = list(CDTD_ALGORITHMS.keys())[algo_choice - 1]
-    console.print(f'\n[green]✅ Đã chọn: {CDTD_ALGORITHMS[cdtd_settings["algo"]]}[/]')
-    
-    console.print(f"\n[bold {HTOOL_COLORS['gold']}]📱 Cấu hình Telegram? (y/n)[/]")
-    if Prompt.ask("   >>", choices=['y', 'n'], default='n') == 'y':
+    cdtd_settings["algo"] = available[idx-1]
+
+    console.print()
+    console.print(Rule(style=HTOOL_COLORS["accent_line"]))
+    if Prompt.ask(f"  [bold {HTOOL_COLORS['neon_orange']}]◈ Telegram integration (y/n)[/bold {HTOOL_COLORS['neon_orange']}]", choices=["y","n"], default="n") == "y":
         setup_telegram()
-    
-    console.print(f'\n[green]✅ Cấu hình hoàn tất![/]')
-    time.sleep(1.5)
+    console.print()
+    console.print(Panel(
+        Text.assemble(
+            ("✓  CONFIG SAVED\n", f"bold {HTOOL_COLORS['emerald']}"),
+            ("ENGINE  ", HTOOL_COLORS["muted"]),
+            (CDTD_ALGORITHMS.get(cdtd_settings['algo'], cdtd_settings['algo']), f"bold {HTOOL_COLORS['gold']}"),
+        ),
+        border_style=HTOOL_COLORS["emerald"],
+        box=box.SIMPLE,
+        padding=(0, 2),
+    ))
+    time.sleep(0.8)
     return True
+
 
 def main_cdtd_v3():
     console.clear()
-    header = Panel(
-        Align.center(Text.assemble(
-            (f"{ICONS['rocket']} ", f"bold {HTOOL_COLORS['gold']}"),
-            ("CHẠY ĐUA TỐC ĐỘ - 42 AI", f"bold {HTOOL_COLORS['neon_blue']}")
-        )),
-        border_style=HTOOL_COLORS["gold"],
-        box=box.DOUBLE
-    )
-    console.print(header)
-    console.print(f"[dim]💬 Support: @htool88 | 42 AI | Telegram[/dim]\n")
+    brand = Text()
+    brand.append(" ▶▶ ", style=f"bold {HTOOL_COLORS['bg_deep']} on {HTOOL_COLORS['neon_blue']}")
+    brand.append("  CHẠY ĐUA TỐC ĐỘ  ", style=f"bold {HTOOL_COLORS['platinum']}")
+    brand.append("·  42 AI RACE ENGINE", style=HTOOL_COLORS["muted"])
+    console.print(Panel(
+        Align.center(brand),
+        border_style=HTOOL_COLORS["neon_blue"],
+        box=box.HEAVY_HEAD,
+        padding=(0, 1),
+    ))
+    console.print(Align.center(Text("◈ Support: @htool88  ·  42 AI  ·  Telegram", style=HTOOL_COLORS["muted"])))
+    console.print()
     
     data = load_data_cdtd()
     setup_cdtd_headers(data)
@@ -4787,14 +5650,23 @@ def main_cdtd_v3():
     console.clear()
     final_asset = user_asset_cdtd()
     pnl = final_asset.get(cdtd_coin, 0) - cdtd_stats['asset_0']
+    pnl_col = HTOOL_COLORS["emerald"] if pnl >= 0 else HTOOL_COLORS["ruby"]
+    sum_grid = Table.grid(expand=True, padding=(0, 3))
+    sum_grid.add_column(ratio=1); sum_grid.add_column(ratio=1); sum_grid.add_column(ratio=1)
+    sum_grid.add_row(
+        Panel(Text.assemble(("THẮNG\n", HTOOL_COLORS["muted"]), (str(cdtd_stats['win']), f"bold {HTOOL_COLORS['emerald']}")), border_style=HTOOL_COLORS["emerald"], box=box.SIMPLE, padding=(0,2)),
+        Panel(Text.assemble(("THUA\n",  HTOOL_COLORS["muted"]), (str(cdtd_stats['lose']), f"bold {HTOOL_COLORS['ruby']}")),   border_style=HTOOL_COLORS["ruby"],    box=box.SIMPLE, padding=(0,2)),
+        Panel(Text.assemble(("P&L\n",   HTOOL_COLORS["muted"]), (f"{pnl:+.4f} {cdtd_coin}", f"bold {pnl_col}")),             border_style=pnl_col,                 box=box.SIMPLE, padding=(0,2)),
+    )
     summary = Panel(
-        Align.center(Text.assemble(
-            ("\n📊 TỔNG KẾT\n\n", f"bold {HTOOL_COLORS['gold']}"),
-            (f"Thắng: {cdtd_stats['win']} | Thua: {cdtd_stats['lose']}\n", "white"),
-            (f"P&L: {pnl:+.4f} {cdtd_coin}\n", HTOOL_COLORS["gold"] if pnl >= 0 else HTOOL_COLORS["ruby"])
-        )),
+        Group(
+            Align.center(Text("◈  TỔNG KẾT PHIÊN  ◈", style=f"bold {HTOOL_COLORS['gold']}")),
+            Rule(style=HTOOL_COLORS["accent_line"]),
+            sum_grid,
+        ),
         border_style=HTOOL_COLORS["gold"],
-        box=box.DOUBLE
+        box=box.HEAVY_HEAD,
+        padding=(0, 1),
     )
     console.print(summary)
     console.print("\n[dim]Nhấn Enter để quay lại menu...[/]")
@@ -4852,14 +5724,19 @@ def load_strategy_config() -> bool:
     """Load cấu hình chiến lược từ file."""
     global base_bet, multiplier, run_mode, bet_rounds_before_skip
     global pause_after_losses, profit_target, stop_when_profit_reached
-    global stop_loss_target, stop_when_loss_reached, analysis_duration, settings, current_bet
+    global stop_loss_target, stop_when_loss_reached, analysis_duration, settings, current_bet, _key_type
     if not os.path.exists(STRATEGY_CONFIG_FILE):
         console.print(f"[yellow]⚠️ Chưa có file {STRATEGY_CONFIG_FILE}. Hãy SAVE CONFIG trước.[/yellow]")
         return False
     try:
         with open(STRATEGY_CONFIG_FILE, "r", encoding="utf-8") as f:
             cfg = json.load(f)
-        settings["algo"] = cfg.get("algo", settings.get("algo", "ENSEMBLE"))
+        loaded_algo = cfg.get("algo", settings.get("algo", "RANDOM"))
+        available = get_available_ai_list(_key_type)
+        if loaded_algo not in available:
+            loaded_algo = available[0] if available else "RANDOM"
+            console.print(f"[yellow]⚠️ AI trong config không khả dụng với key {_key_type} → dùng {loaded_algo}[/yellow]")
+        settings["algo"] = loaded_algo
         base_bet = float(cfg.get("base_bet", base_bet))
         multiplier = float(cfg.get("multiplier", multiplier))
         run_mode = cfg.get("run_mode", run_mode)
@@ -4879,145 +5756,163 @@ def load_strategy_config() -> bool:
 
 
 def prompt_settings() -> bool:
-    """Menu cấu hình chiến lược Vua Thoát Hiểm."""
     global base_bet, multiplier, run_mode, bet_rounds_before_skip
     global pause_after_losses, profit_target, stop_when_profit_reached
     global stop_loss_target, stop_when_loss_reached, analysis_duration, settings, current_bet, _key_type
 
     console.clear()
-    header = Panel(
-        Align.center(Text.assemble(
-            (f"{ICONS['settings']} ", f"bold {HTOOL_COLORS['gold']}"),
-            ("CẤU HÌNH VUA THOÁT HIỂM", f"bold {HTOOL_COLORS['neon_blue']}")
-        )),
-        border_style=HTOOL_COLORS["gold"],
-        box=box.DOUBLE
-    )
-    console.print(header)
+    brand = Text()
+    brand.append(" ♛ ", style=f"bold {HTOOL_COLORS['bg_deep']} on {HTOOL_COLORS['emerald']}")
+    brand.append("  VUA THOÁT HIỂM  ", style=f"bold {HTOOL_COLORS['platinum']}")
+    brand.append("·  STRATEGY CONFIG", style=HTOOL_COLORS["muted"])
+    console.print(Panel(Align.center(brand), border_style=HTOOL_COLORS["emerald"], box=box.HEAVY_HEAD, padding=(0,1)))
     console.print()
 
-    base_bet = FloatPrompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]💵 Cược gốc (BUILD)[/]",
-        default=float(base_bet or 1.0)
-    )
-    multiplier = FloatPrompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]📈 Hệ số gấp thếp[/]",
-        default=float(multiplier or 2.0)
-    )
+    console.print(Text.assemble(("▌ ", f"bold {HTOOL_COLORS['gold']}"), ("BET ENGINE", f"bold {HTOOL_COLORS['gold']}")))
+    base_bet = FloatPrompt.ask(f"  [{HTOOL_COLORS['muted']}]Base bet (BUILD)[/{HTOOL_COLORS['muted']}]", default=float(base_bet or 1.0))
+    multiplier = FloatPrompt.ask(f"  [{HTOOL_COLORS['muted']}]Multiplier[/{HTOOL_COLORS['muted']}]", default=float(multiplier or 2.0))
     current_bet = base_bet
+    run_mode = "AUTO" if Prompt.ask(
+        f"  [{HTOOL_COLORS['muted']}]Mode[/{HTOOL_COLORS['muted']}] [bold {HTOOL_COLORS['gold']}]1[/]=AUTO  [bold {HTOOL_COLORS['sapphire']}]2[/]=MANUAL",
+        choices=["1","2"], default="1"
+    ) == "1" else "MANUAL"
 
-    mode_choice = Prompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]🎮 Chế độ: [1] AUTO [2] MANUAL[/]",
-        choices=["1", "2"],
-        default="1"
-    )
-    run_mode = "AUTO" if mode_choice == "1" else "MANUAL"
-
-    bet_rounds_before_skip = IntPrompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]🛡️ Nghỉ 1 ván sau N ván (0=không)[/]",
-        default=int(bet_rounds_before_skip or 0)
-    )
-    pause_after_losses = IntPrompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]⏸️ Nghỉ N ván sau khi thua (0=không)[/]",
-        default=int(pause_after_losses or 0)
-    )
-    analysis_duration = FloatPrompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]⏱️ Thời gian phân tích (giây)[/]",
-        default=float(analysis_duration or 45.0)
-    )
-
-    if Prompt.ask(f"[bold {HTOOL_COLORS['gold']}]🎯 Bật mục tiêu lãi? (y/n)[/]", choices=["y", "n"], default="n") == "y":
-        stop_when_profit_reached = True
-        profit_target = FloatPrompt.ask(f"[bold {HTOOL_COLORS['gold']}]Mục tiêu số dư BUILD[/]", default=0.0)
-    else:
-        stop_when_profit_reached = False
-        profit_target = None
-
-    if Prompt.ask(f"[bold {HTOOL_COLORS['gold']}]💀 Bật cắt lỗ? (y/n)[/]", choices=["y", "n"], default="n") == "y":
-        stop_when_loss_reached = True
-        stop_loss_target = FloatPrompt.ask(f"[bold {HTOOL_COLORS['gold']}]Ngưỡng cắt lỗ BUILD[/]", default=0.0)
-    else:
-        stop_when_loss_reached = False
-        stop_loss_target = None
-
-    # Chọn AI
-    available = get_available_ai_list(_key_type)
-    console.print(f"\n[bold {HTOOL_COLORS['neon_pink']}]🧠 Chọn AI (key {_key_type.upper()} — {len(available)} AI):[/]\n")
-    algo_table = Table(box=box.ROUNDED, border_style=HTOOL_COLORS["neon_pink"])
-    algo_table.add_column("#", style=HTOOL_COLORS["gold"], width=4)
-    algo_table.add_column("Thuật toán", style=HTOOL_COLORS["neon_blue"])
-    for i, key in enumerate(available, 1):
-        algo_table.add_row(str(i), SELECTION_MODES.get(key, key))
-    console.print(algo_table)
     console.print()
-    algo_idx = IntPrompt.ask(
-        f"[bold {HTOOL_COLORS['gold']}]>> Chọn (1-{len(available)})[/]",
-        choices=[str(i) for i in range(1, len(available) + 1)],
-        default=1
+    console.print(Rule(f"[bold {HTOOL_COLORS['ruby']}]  ◈  RISK CONTROL  [/]", style=HTOOL_COLORS["accent_line"]))
+    bet_rounds_before_skip = IntPrompt.ask(f"  [{HTOOL_COLORS['muted']}]Skip after N rounds (0=off)[/{HTOOL_COLORS['muted']}]", default=int(bet_rounds_before_skip or 0))
+    pause_after_losses = IntPrompt.ask(f"  [{HTOOL_COLORS['muted']}]Pause N rounds after loss (0=off)[/{HTOOL_COLORS['muted']}]", default=int(pause_after_losses or 0))
+    analysis_duration = FloatPrompt.ask(f"  [{HTOOL_COLORS['muted']}]Analysis duration (seconds)[/{HTOOL_COLORS['muted']}]", default=float(analysis_duration or 45.0))
+
+    stop_when_profit_reached = Prompt.ask(
+        f"  [bold {HTOOL_COLORS['emerald']}]◈ Profit target (y/n)[/bold {HTOOL_COLORS['emerald']}]", choices=["y","n"], default="n"
+    ) == "y"
+    profit_target = FloatPrompt.ask(f"  [{HTOOL_COLORS['muted']}]Target BUILD[/{HTOOL_COLORS['muted']}]", default=0.0) if stop_when_profit_reached else None
+    stop_when_loss_reached = Prompt.ask(
+        f"  [bold {HTOOL_COLORS['ruby']}]◈ Stop loss (y/n)[/bold {HTOOL_COLORS['ruby']}]", choices=["y","n"], default="n"
+    ) == "y"
+    stop_loss_target = FloatPrompt.ask(f"  [{HTOOL_COLORS['muted']}]Loss threshold BUILD[/{HTOOL_COLORS['muted']}]", default=0.0) if stop_when_loss_reached else None
+
+    available = get_available_ai_list(_key_type)
+    console.print()
+    console.print(Rule(f"[bold {HTOOL_COLORS['sapphire']}]  ◉  AI ENGINE  ·  {len(available)} AVAILABLE  [/]", style=HTOOL_COLORS["accent_line"]))
+    ai_table = Table(show_header=True, box=box.SIMPLE_HEAVY, expand=True, padding=(0,1))
+    ai_table.add_column("#", width=4, style=HTOOL_COLORS["muted"])
+    ai_table.add_column("ENGINE", style=f"bold {HTOOL_COLORS['platinum']}")
+    for i, k in enumerate(available, 1):
+        row_col = HTOOL_COLORS["sapphire"] if i % 2 == 0 else HTOOL_COLORS["neon_pink"]
+        ai_table.add_row(Text(str(i), style=f"bold {row_col}"), SELECTION_MODES.get(k, k))
+    console.print(ai_table)
+    idx = IntPrompt.ask(
+        f"  [bold {HTOOL_COLORS['gold']}]▶ Chọn engine[/bold {HTOOL_COLORS['gold']}]",
+        choices=[str(i) for i in range(1, len(available)+1)], default=1
     )
-    settings["algo"] = available[algo_idx - 1]
-    console.print(f"[green]✅ AI: {SELECTION_MODES.get(settings['algo'], settings['algo'])}[/green]")
+    settings["algo"] = available[idx-1]
 
-    if Prompt.ask(f"\n[bold {HTOOL_COLORS['gold']}]📱 Cấu hình Telegram? (y/n)[/]", choices=["y", "n"], default="n") == "y":
+    console.print()
+    console.print(Rule(style=HTOOL_COLORS["accent_line"]))
+    if Prompt.ask(
+        f"  [bold {HTOOL_COLORS['neon_orange']}]◈ Telegram integration (y/n)[/bold {HTOOL_COLORS['neon_orange']}]",
+        choices=["y","n"], default="n"
+    ) == "y":
         setup_telegram()
-
-    console.print(f"\n[green]✅ Cấu hình hoàn tất![/green]")
-    time.sleep(1)
+    console.print()
+    console.print(Panel(
+        Text.assemble(
+            ("✓  CONFIG SAVED\n", f"bold {HTOOL_COLORS['emerald']}"),
+            ("ENGINE  ", HTOOL_COLORS["muted"]),
+            (SELECTION_MODES.get(settings['algo'], settings['algo']), f"bold {HTOOL_COLORS['gold']}"),
+        ),
+        border_style=HTOOL_COLORS["emerald"],
+        box=box.SIMPLE,
+        padding=(0, 2),
+    ))
+    time.sleep(0.8)
     return True
 
 
+
+
 def vth_generate_layout():
-    """Layout live đơn giản cho Vua Thoát Hiểm."""
+    """VTH NOVA: cockpit chiến thuật mới, tách rõ target / room / history."""
     asset_build = current_build if current_build is not None else 0.0
     pnl = cumulative_profit if cumulative_profit is not None else 0.0
-    info = Table(box=None, show_header=False, expand=True)
-    info.add_column(style=f"bold {HTOOL_COLORS['gold']}", width=16)
-    info.add_column(style="white")
-    info.add_row("USER", str(USER_ID or "N/A"))
-    info.add_row("BUILD", f"{asset_build:,.4f}")
-    info.add_row("P&L", f"{pnl:+,.4f}")
-    info.add_row("STREAK", f"W:{win_streak} L:{lose_streak}")
-    info.add_row("AI", SELECTION_MODES.get(settings.get("algo", "RANDOM"), settings.get("algo", "?")))
-    info.add_row("ISSUE", str(issue_id or "—"))
-    info.add_row("STATE", ui_state)
-    info.add_row("WS", _ws_status)
-    info.add_row("BET", f"{(current_bet or base_bet):.2f}")
-    if predicted_room:
-        info.add_row("DỰ ĐOÁN", f"PHÒNG {predicted_room} — {ROOM_NAMES.get(predicted_room, '')}")
-    if killed_room:
-        info.add_row("SÁT THỦ", f"PHÒNG {killed_room} — {ROOM_NAMES.get(killed_room, '')}")
+    n_ai = len(get_available_ai_list(_key_type))
+    algo_name = SELECTION_MODES.get(settings.get("algo", "RANDOM"), settings.get("algo", "?"))
+    pnl_color = HTOOL_COLORS["emerald"] if pnl >= 0 else HTOOL_COLORS["ruby"]
 
-    rooms = Table(title="Phòng", box=box.ROUNDED, expand=True)
-    rooms.add_column("ID", width=4)
-    rooms.add_column("Tên")
-    rooms.add_column("Players", justify="right")
-    rooms.add_column("Bet", justify="right")
-    rooms.add_column("Kills", justify="right")
+    top = Table.grid(expand=True, padding=(0,1))
+    for _ in range(6):
+        top.add_column(ratio=1)
+    values = [
+        ("USER", USER_ID or "N/A", HTOOL_COLORS["sapphire"]),
+        ("BUILD", f"{asset_build:,.4f}", HTOOL_COLORS["gold"]),
+        ("P&L", f"{pnl:+,.4f}", pnl_color),
+        ("AI", str(n_ai), HTOOL_COLORS["neon_pink"]),
+        ("KEY", str(_key_type).upper(), HTOOL_COLORS["sky"]),
+        ("ISSUE", issue_id or "—", HTOOL_COLORS["muted"]),
+    ]
+    top.add_row(*[Text.from_markup(f"[bold {c}]{k}[/]\\n[bold white]{v}[/]") for k,v,c in values])
+
+    engine = Text()
+    engine.append("VTH  /  STRATEGY ENGINE\n", style=f"bold {HTOOL_COLORS['sapphire']}")
+    engine.append(f"STATE    {ui_state}\n", style="bold white")
+    engine.append(f"MODE     {algo_name}\n", style=HTOOL_COLORS["muted"])
+    engine.append(f"BET      {(current_bet or base_bet):.2f} BUILD\n", style=HTOOL_COLORS["gold"])
+    engine.append(f"STREAK   {win_streak}W / {lose_streak}L\n", style=HTOOL_COLORS["neon_pink"])
+    if predicted_room:
+        engine.append(f"TARGET   ROOM {predicted_room}  {ROOM_NAMES.get(predicted_room,'')}\n", style=f"bold {HTOOL_COLORS['emerald']}")
+    if killed_room:
+        engine.append(f"BLOCKED  ROOM {killed_room}  {ROOM_NAMES.get(killed_room,'')}", style=f"bold {HTOOL_COLORS['ruby']}")
+    else:
+        engine.append("BLOCKED  —", style=HTOOL_COLORS["muted"])
+
+    rooms = Table(show_header=True, box=box.SIMPLE_HEAVY, expand=True, padding=(0,1))
+    rooms.add_column("ROOM", width=6)
+    rooms.add_column("NAME")
+    rooms.add_column("PLAYERS", justify="right")
+    rooms.add_column("BET", justify="right")
+    rooms.add_column("KILLS", justify="right")
     for r in ROOM_ORDER:
-        mark = "🎯" if predicted_room == r else ("💀" if killed_room == r else "")
+        accent = HTOOL_COLORS["emerald"] if predicted_room == r else HTOOL_COLORS["ruby"] if killed_room == r else HTOOL_COLORS["muted"]
         rooms.add_row(
-            f"{mark}{r}",
-            ROOM_NAMES.get(r, str(r)),
-            str(room_state[r].get("players", 0)),
-            str(room_state[r].get("bet", 0)),
-            str(room_stats[r].get("kills", 0)),
+            Text(f"{r:02d}", style=f"bold {accent}"),
+            Text(ROOM_NAMES.get(r, str(r)), style="bold white"),
+            str(room_state[r].get("players",0)),
+            str(room_state[r].get("bet",0)),
+            str(room_stats[r].get("kills",0)),
         )
 
-    hist = Table(title="Lịch sử cược", box=box.ROUNDED, expand=True)
-    hist.add_column("Issue", width=8)
-    hist.add_column("Room")
-    hist.add_column("Amount", justify="right")
-    hist.add_column("KQ")
-    for b in list(bet_history)[-8:]:
-        res = b.get("result", "Đang")
-        style = "green" if res == "Thắng" else ("red" if res == "Thua" else "yellow")
-        hist.add_row(str(b.get("issue", "")), str(b.get("room", "")), f"{b.get('amount', 0):.2f}", f"[{style}]{res}[/]")
+    hist = Table(show_header=True, box=box.SIMPLE, expand=True, padding=(0,1))
+    hist.add_column("ISSUE", no_wrap=True)
+    hist.add_column("ROOM")
+    hist.add_column("BET", justify="right")
+    hist.add_column("RESULT", justify="right")
+    rows = list(bet_history)[-6:]
+    if not rows:
+        hist.add_row("—", "Chưa có", "0.00", "WAIT")
+    for b in rows:
+        res = b.get("result","Đang")
+        rc = HTOOL_COLORS["emerald"] if res == "Thắng" else HTOOL_COLORS["ruby"] if res == "Thua" else HTOOL_COLORS["gold"]
+        hist.add_row(str(b.get("issue","")), str(b.get("room","")), f"{b.get('amount',0):.2f}",
+                     Text(str(res).upper(), style=f"bold {rc}"))
 
-    root = Table.grid(expand=True)
-    root.add_row(Panel(info, title="VUA THOÁT HIỂM", border_style=HTOOL_COLORS["gold"], box=box.HEAVY))
-    root.add_row(rooms)
-    root.add_row(hist)
+    root = Table.grid(expand=True, pad_edge=False)
+    root.add_row(Align.center(Text("VTH  /  NOVA", style=f"bold {HTOOL_COLORS['sapphire']}")))
+    root.add_row(Rule(style=HTOOL_COLORS["sapphire"]))
+    root.add_row(Panel(top, title="[bold]SYSTEM STRIP[/]", border_style=HTOOL_COLORS["onyx"], box=box.ROUNDED, padding=(0,1)))
+
+    upper = Table.grid(expand=True, pad_edge=False)
+    upper.add_column(ratio=38)
+    upper.add_column(ratio=62)
+    upper.add_row(
+        Panel(engine, title="[bold]01  DECISION[/]", border_style=HTOOL_COLORS["neon_pink"], box=box.ROUNDED, padding=(1,2)),
+        Panel(rooms, title="[bold]02  ROOM MATRIX[/]", border_style=HTOOL_COLORS["sapphire"], box=box.ROUNDED, padding=(0,1))
+    )
+    root.add_row(upper)
+    root.add_row(Panel(hist, title="[bold]03  BET JOURNAL[/]", border_style=HTOOL_COLORS["gold"], box=box.ROUNDED, padding=(0,1)))
     return root
+
+
 
 
 def start_game_flow():
@@ -5029,8 +5924,16 @@ def start_game_flow():
     cumulative_profit = None
 
     console.clear()
-    console.print(f"[bold {HTOOL_COLORS['neon_green']}]🎯 KHỞI ĐỘNG VUA THOÁT HIỂM...[/]")
-    console.print(f"[dim]AI: {SELECTION_MODES.get(settings.get('algo'), settings.get('algo'))} | Cược: {base_bet} | x{multiplier}[/dim]\n")
+    brand = Text()
+    brand.append(" ♛ ", style=f"bold {HTOOL_COLORS['bg_deep']} on {HTOOL_COLORS['emerald']}")
+    brand.append("  VUA THOÁT HIỂM  ", style=f"bold {HTOOL_COLORS['platinum']}")
+    brand.append("·  KHỞI ĐỘNG", style=HTOOL_COLORS["muted"])
+    console.print(Panel(Align.center(brand), border_style=HTOOL_COLORS["emerald"], box=box.HEAVY_HEAD, padding=(0, 1)))
+    console.print(Align.center(Text(
+        f"AI: {SELECTION_MODES.get(settings.get('algo'), settings.get('algo'))}  ·  Cược: {base_bet}  ·  x{multiplier}",
+        style=HTOOL_COLORS["muted"]
+    )))
+    console.print()
 
     # Fetch balance lần đầu
     try:
@@ -5060,14 +5963,25 @@ def start_game_flow():
             pass
 
     console.clear()
+    final_pnl = cumulative_profit or 0
+    pnl_col = HTOOL_COLORS["emerald"] if final_pnl >= 0 else HTOOL_COLORS["ruby"]
+    end_grid = Table.grid(expand=True, padding=(0, 2))
+    end_grid.add_column(ratio=1); end_grid.add_column(ratio=1); end_grid.add_column(ratio=1); end_grid.add_column(ratio=1)
+    end_grid.add_row(
+        Panel(Text.assemble(("MAX W\n", HTOOL_COLORS["muted"]), (str(max_win_streak),  f"bold {HTOOL_COLORS['emerald']}")), border_style=HTOOL_COLORS["emerald"], box=box.SIMPLE, padding=(0,1)),
+        Panel(Text.assemble(("MAX L\n", HTOOL_COLORS["muted"]), (str(max_lose_streak), f"bold {HTOOL_COLORS['ruby']}")),    border_style=HTOOL_COLORS["ruby"],    box=box.SIMPLE, padding=(0,1)),
+        Panel(Text.assemble(("W/L\n",   HTOOL_COLORS["muted"]), (f"{win_streak}/{lose_streak}", f"bold {HTOOL_COLORS['gold']}")), border_style=HTOOL_COLORS["gold"], box=box.SIMPLE, padding=(0,1)),
+        Panel(Text.assemble(("P&L\n",   HTOOL_COLORS["muted"]), (f"{final_pnl:+.4f}", f"bold {pnl_col}")), border_style=pnl_col, box=box.SIMPLE, padding=(0,1)),
+    )
     console.print(Panel(
-        Align.center(Text.assemble(
-            ("\n📊 KẾT THÚC PHIÊN\n\n", f"bold {HTOOL_COLORS['gold']}"),
-            (f"W:{win_streak} L:{lose_streak} | MaxW:{max_win_streak} MaxL:{max_lose_streak}\n", "white"),
-            (f"P&L: {(cumulative_profit or 0):+.4f} BUILD\n", HTOOL_COLORS["gold"]),
-        )),
+        Group(
+            Align.center(Text("♛  KẾT THÚC PHIÊN  ♛", style=f"bold {HTOOL_COLORS['gold']}")),
+            Rule(style=HTOOL_COLORS["accent_line"]),
+            end_grid,
+        ),
         border_style=HTOOL_COLORS["gold"],
-        box=box.DOUBLE
+        box=box.HEAVY_HEAD,
+        padding=(0, 1),
     ))
     console.print("\n[dim]Nhấn Enter để quay lại menu...[/]")
     input()
@@ -5138,7 +6052,7 @@ def admin_create_key_interactive(key_type: str = "free") -> None:
                 ("AI: ", "white"), (f"{max_ai}\n", "bold"),
                 ("Hạn: ", "white"), (f"{hours} giờ\n", "bold"),
             ),
-            border_style="green", box=box.HEAVY
+            border_style=HTOOL_COLORS["emerald"], box=box.ROUNDED
         ))
     else:
         console.print(f"[red]❌ {result}[/red]")
@@ -5154,16 +6068,18 @@ def admin_menu() -> None:
                 ("Kết nối Supabase · Quản lý key & user", "dim"),
             )),
             border_style=HTOOL_COLORS["ruby"],
-            box=box.DOUBLE
+            box=box.ROUNDED
         ))
         console.print("[1] 📋 Xem toàn bộ key (Supabase)")
         console.print("[2] 🔑 Thêm KEY FREE (10 AI, Lotto 5 AI)")
         console.print("[3] 👑 Thêm KEY VIP (toàn bộ AI)")
         console.print("[4] ❌ Vô hiệu hóa key")
         console.print("[5] 👥 Xem user local (xu/key)")
+        console.print("[6] ☁️  Xem user Supabase (user_id + IP)")
+        console.print("[7] 🔓 Gỡ BAN user (Supabase)")
         console.print("[q] 🔙 Thoát admin")
         console.print()
-        choice = Prompt.ask(">>", choices=["1", "2", "3", "4", "5", "q"], default="q")
+        choice = Prompt.ask(">>", choices=["1", "2", "3", "4", "5", "6", "7", "q"], default="q")
 
         if choice == "q":
             break
@@ -5225,6 +6141,36 @@ def admin_menu() -> None:
                     )
                 console.print(t)
             input("\n[dim]Enter...[/dim]")
+        elif choice == "6":
+            users = supabase_list_users(100)
+            if not users:
+                console.print("[yellow]Không có user trên Supabase hoặc bảng users chưa tạo.[/yellow]")
+                console.print("[dim]Chạy SQL tạo bảng users trong Supabase SQL Editor (xem comment trong code).[/dim]")
+            else:
+                t = Table(box=box.ROUNDED, border_style=HTOOL_COLORS["emerald"], title=f"Supabase Users ({len(users)})")
+                t.add_column("user_id", style=HTOOL_COLORS["neon_blue"])
+                t.add_column("IP")
+                t.add_column("Xu", justify="right")
+                t.add_column("Keys", justify="right")
+                t.add_column("status")
+                t.add_column("updated", style="dim")
+                for u in users:
+                    t.add_row(
+                        str(u.get("user_id", ""))[:14],
+                        str(u.get("ip", ""))[:18],
+                        f"{float(u.get('coins', 0) or 0):.1f}",
+                        str(u.get("keys_count", 0)),
+                        str(u.get("status", "")),
+                        str(u.get("updated_at", "") or u.get("last_seen_at", ""))[:19],
+                    )
+                console.print(t)
+            input("\n[dim]Enter...[/dim]")
+        elif choice == "7":
+            uid = Prompt.ask("Nhập user_id cần gỡ ban").strip()
+            if uid:
+                ok, msg = supabase_unban_user(uid)
+                console.print(f"[green]✅ {msg}[/green]" if ok else f"[red]❌ {msg}[/red]")
+            input("\n[dim]Enter...[/dim]")
 
 
 # ================== MAIN MENU ==================
@@ -5233,68 +6179,117 @@ def build_main_menu():
     global _in_menu, _ws_status, _secure_mode
     _in_menu = True
     console.clear()
-    logo_text = build_logo_with_gradient(LOGO)
-    console.print(Align.center(logo_text))
-    
-    console.print()
-    free_ai_n = len(FREE_AI_LIST)
-    menu_panel = Panel(Align.center(Text.assemble(
-        ("\n", ""),
-        (f"  {ICONS['crown']}  ", f"bold {HTOOL_COLORS['gold']}"),
-        ("HTOOL VIP PREMIUM v3.0", f"bold {HTOOL_COLORS['neon_blue']}"),
-        (f"  {ICONS['crown']}  ", f"bold {HTOOL_COLORS['gold']}"),
-        ("\n", ""),
-        ("╔════════════════════════════════════════════════════════════╗\n", f"dim {HTOOL_COLORS['gold']}"),
-        ("║  [1]  🎯  VUA THOÁT HIỂM - PLAY & CONFIG                ║\n", f"bold {HTOOL_COLORS['neon_green']}"),
-        ("║       ➜ Chọn tài khoản và thiết lập chiến lược chơi      ║\n", "dim"),
-        ("║                                                          ║\n", "dim"),
-        ("║  [2]  🏎️  CHẠY ĐUA TỐC ĐỘ                               ║\n", f"bold {HTOOL_COLORS['neon_orange']}"),
-        ("║       ➜ FREE: 10 AI | VIP: full AI                       ║\n", "dim"),
-        ("║                                                          ║\n", "dim"),
-        ("║  [3]  🎰  WINHASH LOTTO                                  ║\n", f"bold {HTOOL_COLORS['gold']}"),
-        ("║       ➜ FREE: 5 AI | VIP: full AI                        ║\n", "dim"),
-        ("║                                                          ║\n", "dim"),
-        ("║  [4]  ➕  ADD ACCOUNT                                    ║\n", f"bold {HTOOL_COLORS['sapphire']}"),
-        ("║       ➜ Thêm tài khoản mới vào danh sách                 ║\n", "dim"),
-        ("║                                                          ║\n", "dim"),
-        ("║  [5]  🗑️  DELETE ACCOUNT                                 ║\n", f"bold {HTOOL_COLORS['ruby']}"),
-        ("║       ➜ Xóa tài khoản khỏi danh sách                     ║\n", "dim"),
-        ("║                                                          ║\n", "dim"),
-        ("║  [6]  ⚙️  SAVE CONFIG                                    ║\n", f"bold {HTOOL_COLORS['gold']}"),
-        ("║       ➜ Lưu cấu hình hiện tại để dùng sau                ║\n", "dim"),
-        ("║                                                          ║\n", "dim"),
-        ("║  [7]  🚀  PLAY WITH CONFIG                               ║\n", f"bold {HTOOL_COLORS['neon_pink']}"),
-        ("║       ➜ Chơi ngay với cấu hình đã lưu                    ║\n", "dim"),
-        ("║                                                          ║\n", "dim"),
-        ("║  [8]  🛡️  ANTI-DETECTION STATUS                          ║\n", f"bold {HTOOL_COLORS['emerald']}"),
-        ("║       ➜ Xem trạng thái chống soi                        ║\n", "dim"),
-        ("║                                                          ║\n", "dim"),
-        ("║  [q]  👋  EXIT                                           ║\n", f"bold {HTOOL_COLORS['rose']}"),
-        ("║       ➜ Thoát chương trình                               ║\n", "dim"),
-        ("╚════════════════════════════════════════════════════════════╝\n", f"dim {HTOOL_COLORS['gold']}"),
-        ("\n", ""),
-        (f"  💬  Support: @htool88  | FREE AI: {free_ai_n} | Lotto FREE: 5\n", f"bold {HTOOL_COLORS['neon_blue']}"),
-        (f"  🔗  WebSocket: {_ws_status}\n", "dim"),
-        (f"  🌐  IP: {_ip_info.get('public_ip', 'N/A')}\n", "dim"),
-        (f"  🛡️  Anti-Detection: {'✅ ON' if _secure_mode else '❌ OFF'}\n", "dim"),
-        (f"  🔑  Key: {_key_type.upper() if _key_type else 'N/A'}\n", "dim"),
-        ("\n", ""),
-    )), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE, padding=(1, 2))
-    console.print(menu_panel)
-    console.print()
-    raw = Prompt.ask(f"[bold {HTOOL_COLORS['gold']}]>> Enter your choice[/bold {HTOOL_COLORS['gold']}]", default="q")
-    # Menu admin ẩn: nhập đúng mã 9826665
-    if raw.strip() == ADMIN_SECRET_CODE:
-        admin_menu()
-        return build_main_menu()
-    choice = raw.strip().lower()
-    if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "q"]:
-        console.print("[red]Lựa chọn không hợp lệ[/red]")
-        time.sleep(1)
-        return "q"
-    return choice
 
-# ================== QUẢN LÝ TÀI KHOẢN ==================
+    # ── HEADER BRAND ─────────────────────────────────────────────
+    logo_lines = LOGO.split("\n")
+    for i, line in enumerate(logo_lines):
+        if line.strip():
+            # gradient: odd lines sapphire, even lines gold
+            col = HTOOL_COLORS["sapphire"] if i % 2 == 0 else HTOOL_COLORS["gold"]
+            console.print(Align.center(Text(line, style=f"bold {col}")))
+    tagline = Text(LOGO_TAGLINE, style=f"{HTOOL_COLORS['muted']}")
+    console.print(Align.center(tagline))
+    console.print()
+
+    # ── MODULE GRID ───────────────────────────────────────────────
+    # Left column: game modules. Right column: tools.
+    LEFT = [
+        ("1", "♛", "VUA THOÁT HIỂM", "42 AI  ·  chiến lược tự động", HTOOL_COLORS["emerald"]),
+        ("2", "▶▶", "CHẠY ĐUA TỐC ĐỘ", "42 AI  ·  race prediction",    HTOOL_COLORS["neon_blue"]),
+        ("3", "★", "WINHASH LOTTO",   "AI lottery engine",              HTOOL_COLORS["gold"]),
+    ]
+    RIGHT = [
+        ("4", "◉", "THÊM TÀI KHOẢN", "account manager",    HTOOL_COLORS["sapphire"]),
+        ("5", "✕", "XÓA TÀI KHOẢN",  "account manager",    HTOOL_COLORS["ruby"]),
+        ("6", "◈", "CẤU HÌNH",       "workspace config",   HTOOL_COLORS["lavender"]),
+        ("7", "▲", "CHẠY CẤU HÌNH",  "launch saved config",HTOOL_COLORS["neon_orange"]),
+        ("8", "⬡", "BẢO MẬT",        "anti-detection",     HTOOL_COLORS["turquoise"]),
+    ]
+
+    def _module_row(no, icon, name, desc, accent):
+        num_txt = Text(f" {no} ", style=f"bold {HTOOL_COLORS['bg_deep']} on {accent}")
+        ico_txt = Text(f" {icon} ", style=f"bold {accent}")
+        name_txt = Text(name, style=f"bold {HTOOL_COLORS['platinum']}")
+        desc_txt = Text(f"  {desc}", style=HTOOL_COLORS["muted"])
+        line = Text()
+        line.append_text(num_txt)
+        line.append_text(ico_txt)
+        line.append_text(name_txt)
+        line.append_text(desc_txt)
+        return line
+
+    # Game modules in a highlighted panel
+    game_table = Table(show_header=False, box=box.SIMPLE, expand=True, padding=(0, 1))
+    game_table.add_column(width=3)
+    game_table.add_column(width=3)
+    game_table.add_column()
+    game_table.add_column()
+    for no, icon, name, desc, accent in LEFT:
+        game_table.add_row(
+            Text(f" {no} ", style=f"bold {HTOOL_COLORS['bg_deep']} on {accent}"),
+            Text(f" {icon} ", style=f"bold {accent}"),
+            Text(name, style=f"bold {HTOOL_COLORS['platinum']}"),
+            Text(desc, style=HTOOL_COLORS["muted"]),
+        )
+    game_panel = Panel(
+        game_table,
+        title=f"[bold {HTOOL_COLORS['emerald']}]  ▶  GAME MODULES  [/]",
+        border_style=HTOOL_COLORS["emerald"],
+        box=box.HEAVY_HEAD,
+        padding=(0, 1),
+    )
+
+    tool_table = Table(show_header=False, box=box.SIMPLE, expand=True, padding=(0, 1))
+    tool_table.add_column(width=3)
+    tool_table.add_column(width=3)
+    tool_table.add_column()
+    tool_table.add_column()
+    for no, icon, name, desc, accent in RIGHT:
+        tool_table.add_row(
+            Text(f" {no} ", style=f"bold {HTOOL_COLORS['bg_deep']} on {accent}"),
+            Text(f" {icon} ", style=f"bold {accent}"),
+            Text(name, style=f"bold {HTOOL_COLORS['platinum']}"),
+            Text(desc, style=HTOOL_COLORS["muted"]),
+        )
+    tool_panel = Panel(
+        tool_table,
+        title=f"[bold {HTOOL_COLORS['sapphire']}]  ◈  TOOLS  [/]",
+        border_style=HTOOL_COLORS["sapphire"],
+        box=box.HEAVY_HEAD,
+        padding=(0, 1),
+    )
+
+    grid = Table.grid(expand=True, padding=(0, 1))
+    grid.add_column(ratio=45)
+    grid.add_column(ratio=55)
+    grid.add_row(game_panel, tool_panel)
+    console.print(grid)
+
+    # ── STATUS STRIP ──────────────────────────────────────────────
+    key_color = HTOOL_COLORS["gold"] if _key_type == "vip" else HTOOL_COLORS["diamond"]
+    sec_color = HTOOL_COLORS["emerald"] if _secure_mode else HTOOL_COLORS["neon_orange"]
+    status = Text()
+    status.append("  ◉ ", style=HTOOL_COLORS["muted"])
+    status.append(f"ACCESS ", style=HTOOL_COLORS["muted"])
+    status.append(f"{str(_key_type).upper()} ", style=f"bold {key_color}")
+    status.append("  │  ", style=HTOOL_COLORS["accent_line"])
+    status.append(f"WS ", style=HTOOL_COLORS["muted"])
+    status.append(f"{_ws_status} ", style=HTOOL_COLORS["diamond"])
+    status.append("  │  ", style=HTOOL_COLORS["accent_line"])
+    status.append(f"SECURITY ", style=HTOOL_COLORS["muted"])
+    status.append(f"{'ON' if _secure_mode else 'STANDBY'} ", style=f"bold {sec_color}")
+    status.append("  │  ", style=HTOOL_COLORS["accent_line"])
+    status.append(f"IP ", style=HTOOL_COLORS["muted"])
+    status.append(f"{_ip_info.get('public_ip','N/A')}  ", style=HTOOL_COLORS["sky"])
+    console.print(Panel(Align.center(status), border_style=HTOOL_COLORS["accent_line"], box=box.SIMPLE, padding=(0,0)))
+
+    raw = _ui_prompt("SELECT MODULE  [1-8 / q]").lower()
+    if raw == ADMIN_SECRET_CODE or raw == "9826665":
+        try: admin_menu()
+        except NameError: console.print("[red]Admin menu chưa sẵn sàng.[/red]"); time.sleep(1)
+        return build_main_menu()
+    return raw if raw in ["1","2","3","4","5","6","7","8","q"] else "q"
+
 
 def load_accounts() -> list:
     acc_file = Path("accounts.json")
@@ -5312,7 +6307,7 @@ def save_accounts(accounts: list):
 
 def add_new_account(accounts: list) -> bool:
     console.clear()
-    header = Panel(Align.center(Text.assemble((f"{ICONS['user']} ", f"bold {HTOOL_COLORS['gold']}"), ("ADD NEW ACCOUNT", f"bold {HTOOL_COLORS['neon_blue']}"), (f" {ICONS['user']}", f"bold {HTOOL_COLORS['gold']}"))), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE)
+    header = Panel(Align.center(Text.assemble((f"{ICONS['user']} ", f"bold {HTOOL_COLORS['gold']}"), ("ADD NEW ACCOUNT", f"bold {HTOOL_COLORS['neon_blue']}"), (f" {ICONS['user']}", f"bold {HTOOL_COLORS['gold']}"))), border_style=HTOOL_COLORS["gold"], box=box.ROUNDED)
     console.print(header)
     console.print()
     console.print(Panel(Text.assemble((f"{ICONS['info']} ", "bold yellow"), ("Dán link trò chơi vào bên dưới", "white"), ("\n", ""), ("Ví dụ: ", "dim"), ("https://xworld.info/?userId=12345&secretKey=abc123", "dim cyan")), border_style=HTOOL_COLORS["sapphire"], box=box.ROUNDED))
@@ -5348,7 +6343,7 @@ def add_new_account(accounts: list) -> bool:
 
 def delete_account(accounts: list) -> bool:
     console.clear()
-    header = Panel(Align.center(Text.assemble((f"{ICONS['fire']} ", f"bold {HTOOL_COLORS['ruby']}"), ("DELETE ACCOUNT", f"bold {HTOOL_COLORS['neon_blue']}"), (f" {ICONS['fire']}", f"bold {HTOOL_COLORS['ruby']}"))), border_style=HTOOL_COLORS["ruby"], box=box.DOUBLE)
+    header = Panel(Align.center(Text.assemble((f"{ICONS['fire']} ", f"bold {HTOOL_COLORS['ruby']}"), ("DELETE ACCOUNT", f"bold {HTOOL_COLORS['neon_blue']}"), (f" {ICONS['fire']}", f"bold {HTOOL_COLORS['ruby']}"))), border_style=HTOOL_COLORS["ruby"], box=box.ROUNDED)
     console.print(header)
     console.print()
     if not accounts:
@@ -5388,7 +6383,7 @@ def select_account_premium() -> bool:
     global USER_ID, SECRET_KEY
     while True:
         console.clear()
-        header = Panel(Align.center(Text.assemble((f"{ICONS['user']} ", f"bold {HTOOL_COLORS['gold']}"), ("SELECT ACCOUNT", f"bold {HTOOL_COLORS['neon_blue']}"), (f" {ICONS['user']}", f"bold {HTOOL_COLORS['gold']}"))), border_style=HTOOL_COLORS["gold"], box=box.DOUBLE)
+        header = Panel(Align.center(Text.assemble((f"{ICONS['user']} ", f"bold {HTOOL_COLORS['gold']}"), ("SELECT ACCOUNT", f"bold {HTOOL_COLORS['neon_blue']}"), (f" {ICONS['user']}", f"bold {HTOOL_COLORS['gold']}"))), border_style=HTOOL_COLORS["gold"], box=box.ROUNDED)
         console.print(header)
         console.print()
         accounts = load_accounts()
@@ -5396,7 +6391,7 @@ def select_account_premium() -> bool:
             console.print(Panel(Align.center(Text.assemble((f"{ICONS['warning']} ", "bold yellow"), ("Không có tài khoản nào!", "bold white"), ("\n", ""), ("Vui lòng dùng tùy chọn [5] để thêm tài khoản", "dim"))), border_style=HTOOL_COLORS["ruby"], box=box.ROUNDED))
             time.sleep(2)
             return False
-        table = Table(title=f"[bold {HTOOL_COLORS['gold']}]📋 ACCOUNT LIST[/bold {HTOOL_COLORS['gold']}]", box=box.HEAVY, border_style=HTOOL_COLORS["sapphire"])
+        table = Table(title=f"[bold {HTOOL_COLORS['gold']}]📋 ACCOUNT LIST[/bold {HTOOL_COLORS['gold']}]", box=box.ROUNDED, border_style=HTOOL_COLORS["sapphire"])
         table.add_column("STT", style=f"bold {HTOOL_COLORS['gold']}", width=6)
         table.add_column("User ID", style=HTOOL_COLORS["neon_blue"])
         table.add_column("Balance", justify="right")
@@ -5445,6 +6440,16 @@ def main_vth():
 
     migrate_old_data()
 
+    # Chỉ kiểm tra ban theo IP (đã bỏ rule cùng máy / fingerprint)
+    try:
+        ok_dev, msg_dev, _uid_dev = check_device_ip_integrity()
+        if not ok_dev:
+            safe_console_print(f"[bold red]{msg_dev}[/bold red]")
+            input("\n[dim]Enter để thoát...[/dim]")
+            return
+    except Exception as e:
+        safe_console_print(f"[yellow]⚠️ Không kiểm tra được IP/ban: {e}[/yellow]")
+
     while not _is_authenticated:
         success, key, key_type = show_auth_choice_menu()
         if success:
@@ -5464,21 +6469,23 @@ def main_vth():
             return
 
     console.clear()
-    welcome = Panel(
-        Align.center(Text.assemble(
-            (f"{ICONS['crown']} ", f"bold {HTOOL_COLORS['gold']}"),
-            ("WELCOME TO ", "bold white"),
-            ("HTOOL VIP PREMIUM", f"bold {HTOOL_COLORS['neon_blue']}"),
-            (f" {ICONS['crown']}", f"bold {HTOOL_COLORS['gold']}")
-        )),
-        border_style=HTOOL_COLORS["gold"],
-        box=box.DOUBLE
-    )
-    console.print(welcome)
-    console.print("[dim]💬 Support: @htool88 | Version 3.0 Premium[/dim]")
-    console.print(f"[dim]🔑 Đã xác thực với key: {_user_key} ({_key_type})[/dim]")
+    key_col = HTOOL_COLORS["gold"] if _key_type == "vip" else HTOOL_COLORS["diamond"]
+    logo_lines = LOGO.split("\n")
+    for i, line in enumerate(logo_lines):
+        if line.strip():
+            col = HTOOL_COLORS["sapphire"] if i % 2 == 0 else HTOOL_COLORS["gold"]
+            console.print(Align.center(Text(line, style=f"bold {col}")))
+    console.print(Align.center(Text(LOGO_TAGLINE, style=HTOOL_COLORS["muted"])))
+    console.print()
+    info_strip = Text()
+    info_strip.append(" ♛ ACCESS ", style=f"bold {HTOOL_COLORS['muted']}")
+    info_strip.append(f"{_key_type.upper()}  ", style=f"bold {key_col}")
+    info_strip.append("│  KEY ", style=HTOOL_COLORS["accent_line"])
+    info_strip.append(f"{_user_key}  ", style=HTOOL_COLORS["muted"])
     if _key_type == "free":
-        console.print("[dim]📌 FREE: 10 AI · Lotto 5 AI[/dim]")
+        info_strip.append("│  FREE: 10 AI · Lotto 5 AI", style=HTOOL_COLORS["muted"])
+    info_strip.append("│  @htool88", style=HTOOL_COLORS["accent_line"])
+    console.print(Panel(Align.center(info_strip), border_style=key_col, box=box.SIMPLE, padding=(0,0)))
     console.print()
     time.sleep(1)
 
@@ -5531,6 +6538,39 @@ def main_vth():
                 console.print("[yellow]🛡️ Anti-Detection chưa được bật.[/yellow]")
             input("\n[dim]Nhấn Enter để tiếp tục...[/dim]")
 
+        elif choice == 'q':
+            stop_heartbeat()
+            stop_flag = True
+            console.print(Panel(
+                Group(
+                    Align.center(Text("♛  ♛  ♛", style=f"bold {HTOOL_COLORS['gold']}")),
+                    Align.center(Text("THANK YOU FOR USING  HTOOL NOVA", style=f"bold {HTOOL_COLORS['platinum']}")),
+                    Align.center(Text("◈ Support: @htool88  ·  Version 3.0  ◈", style=HTOOL_COLORS["muted"])),
+                ),
+                border_style=HTOOL_COLORS["gold"],
+                box=box.HEAVY_HEAD,
+                padding=(1, 2),
+            ))
+            break
+
+
+if __name__ == "__main__":
+    try:
+        main_vth()
+    except KeyboardInterrupt:
+        stop_flag = True
+        stop_heartbeat()
+        console.print(Panel(
+            Align.center(Text.assemble(
+                ("♛  ", f"bold {HTOOL_COLORS['gold']}"),
+                ("HTOOL NOVA  —  ĐÃ DỪNG  ", f"bold {HTOOL_COLORS['platinum']}"),
+                ("♛", f"bold {HTOOL_COLORS['gold']}"),
+            )),
+            border_style=HTOOL_COLORS["accent_line"],
+            box=box.SIMPLE,
+            padding=(0, 2),
+        ))
+        sys.exit(0)
         elif choice == 'q':
             stop_heartbeat()
             stop_flag = True
